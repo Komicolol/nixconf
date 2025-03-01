@@ -1,0 +1,10 @@
+#+title: Readme
+
+* So....
+- Look, this is NOT gonna be finished until I fucking die or something man :sob:
+
+* your todo list
+** DONE Make it a flake
+** TODO Separate your system shit and user stuff in different directories
+** TODO Make it useable with different systems (e.g. if i ever get a mac this should work/arch with nix on it.)
+** TODO Turn your old laptop into a server
