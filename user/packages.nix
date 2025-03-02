@@ -23,5 +23,7 @@
       feh
       vlc
     ];
+
+    programs.firefox.enable = true;
   };
 }
