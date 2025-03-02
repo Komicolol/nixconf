@@ -8,5 +8,6 @@
     # ./users
     ./services
     ./bluetooth
+    # ./server
   ];
 }

@@ -7,6 +7,12 @@
   };
 
   config = lib.mkIf config.music.enable {
+    services.mopidy = {
+      enable = true;
+    };
 
+    environment.systemPackages = with pkgs; [
+      snapcast
+    ];
   };
 }
