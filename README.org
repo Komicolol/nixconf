@@ -1,7 +1,6 @@
 #+title: My Nix Conf
 #+author: cheeseburger om
 
-* My Nix Conf :3
 - Hours of configs, just to use it on 3 machines :sob:
 
 have fun (?) looking at this mess lmao
