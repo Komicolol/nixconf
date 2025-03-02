@@ -177,6 +177,7 @@
        emacs29-pgtk	
        pyprland					# plugins for hyprland
        inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+       inputs.zen-browser.packages.${pkgs.system}.default
   ];
 
   fonts.packages = with pkgs; [
