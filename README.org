@@ -9,9 +9,9 @@ have fun (?) looking at this mess lmao
 this is bc i know i'll forget what some options are and it might get too complicated for me
 
 *** hosts
-amogus = my thinkpad t14 1st gen laptop
-android = my motorola phone and samsung tablet
-aserver = old ass laptop that i'll use as a server because i'm bored
+- amogus = my thinkpad t14 1st gen laptop
+- android = my motorola phone and samsung tablet
+- aserver = old ass laptop that i'll use as a server because i'm bored
 
 *** User Options
 Default setting btw
