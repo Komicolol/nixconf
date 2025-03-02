@@ -9,7 +9,15 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./../../system
+      ./../../user
     ];
+
+  # User options
+  hyprwm.enable = true;
+  gaming.enable = true;
+  devstuff.enable = true;
+  regularstuff.enable = true;
+  terminal.enable = true;
 
   # enable flakes you doofus
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -88,98 +96,26 @@
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "komico";
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+
   environment.systemPackages = with pkgs; [
        neovim 
        git				# git fetch bitches
        wget				# do you use this?
        curl				# *random script go!*
-       hyprland				# uwu
        kdePackages.sddm				# LET ME THE FUCK INNNN
-       kitty				# why, you have wezterm?
-       wezterm				# why, you have kitty?
-       hyprpaper			# wallpaper yes!
-       hypridle				# bye!
-       yazi				# what are you, a nerd?
-       osu-lazer-bin			# click the circles!
        picom				# x11 thing
-       rofi-wayland-unwrapped 		# app launcher
-       ncmpcpp				# so fuck spotify huh?
-       spotify				# are you special in the head??
-       btop				# resource monitor, like htop but cooler
-       stow				# oh wow you're so cool huh symlinking dotfiles
-       webex				# ew meetings
-       keepassxc			# definately not a normal password manager
-       starship				# by "ricing", you mean stealing configs?
-       cava				# music go brrly
-       gvfs				# i actually don't know what this does lol
-       zip
-       unzip
-       ripgrep
-       lua-language-server
-       python3
-       coreutils
-       fd
-       clang
-       aspell
-       (aspellWithDicts (dicts: with dicts; [
-          en
-	  en-computers
-	  en-science
-	  ]))
        catppuccin-sddm
-       waybar
-       hyprshot
-       cowsay
-       brightnessctl				# So you can change brightness :))) (its been 6 hours.)
-       libreoffice				# documents not fun :(
-       hyprlock					# you are a dumbass.
-       fastfetch				# this legit does not do anything.
-       kanata					# bc I can't get the service working lmao
-       cmake 					# dev stuff (i just need vterm on emacs LOL)
-       vesktop
-       texliveFull
-       gnumake
-       libtool
-       prismlauncher				# minecraft gaming
-       yt-dlp					# downloading music bc why not
-       obs-studio				# why not yknow
-       feh					# xfce wallpaper
-       vlc					# yup\
        dracula-icon-theme			# what a icon fr
        catppuccin-gtk				# :3333
-       emacs29-pgtk	
        pyprland					# plugins for hyprland
        inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
        inputs.zen-browser.packages.${pkgs.system}.default
   ];
 
-  # roblox/minecraft bedrock LOL
 
-  services.flatpak.enable = true;
-
-  # games, infinite games, but no games
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
-  };
-
-  # GTK Theming :3 (need home-manager, but I won't use it until I get Flakes working)
-  # gtk = {
-  #   enable = true;
-  #   package = pkgs.catpuccin-gtk;
-  #   name = "catpuuccin-frappe-blue-standard+default";
-  # };
-  
 
   programs.gnupg.agent = {
     enable = true;
@@ -205,17 +141,6 @@
      '';
     user = "komico";
    };
-
-  # local dumbass forgets about enabling hyprland
-  programs.hyprland = {
-  enable = true;
-  xwayland.enable = true;
-  };
-
-  xdg.portal = {
-  enable = true;
-  extraPortals = [ pkgs.xdg-desktop-portal-gtk];
-  };
 
   programs.thunar.plugins = with pkgs.xfce; [
   thunar-archive-plugin

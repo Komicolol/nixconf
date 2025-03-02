@@ -4,7 +4,8 @@
   imports = [
     ./wmde 
     ./gaming 
-    ./terminal 
-    ./devstuff 
+    ./terminal
+    ./devstuff
+    ./packages.nix
   ];
 }

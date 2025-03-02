@@ -1,7 +1,8 @@
 { pkgs, lib, config, ...}: {
+
   options = {
     hyprwm.enable = 
-    lib.mkEnableOption "enables hyprwm";
+      lib.mkEnableOption "enables hyprwm";
   };
 
   config = lib.mkIf config.hyprwm.enable {
@@ -10,7 +11,7 @@
       xwayland.enable = true;
     };
 
-    enviroment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       hyprpaper
       hyprshot
       hypridle
@@ -18,7 +19,12 @@
       waybar
       wl-clipboard
       pyprland
+      rofi-wayland
     ];
 
+    xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk];
+    };
   };
 }
