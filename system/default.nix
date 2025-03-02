@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./net
+    # ./net
     ./audio
     ./fonts
-    ./users
+    # ./users
     ./services
     ./bluetooth
   ];

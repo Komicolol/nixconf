@@ -1,5 +1,5 @@
 {
-  description = "Nixos config flake";
+  description = "dumbass teen that decided that instead of learning a normal lanugage they'd rather learn this instead...";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

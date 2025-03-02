@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./../../system
     ];
 
   # enable flakes you doofus
@@ -69,26 +70,6 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # bluetooth shit
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -180,18 +161,6 @@
        inputs.zen-browser.packages.${pkgs.system}.default
   ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.mononoki
-    nerd-fonts.symbols-only
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.iosevka
-    noto-fonts
-    noto-fonts-emoji
-    mononoki
-    material-icons
-    material-design-icons
-    ];
-
   # roblox/minecraft bedrock LOL
 
   services.flatpak.enable = true;
@@ -211,9 +180,7 @@
   #   name = "catpuuccin-frappe-blue-standard+default";
   # };
   
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
+
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
@@ -223,14 +190,6 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
-  services.syncthing = {
-  enable = true;
-  openDefaultPorts = true;
-  user = "komico";
-  dataDir = "/home/komico/";
-  configDir = "/home/komico/.config/syncthing";
-  };
 
   # doesn't work right now, everything works except when it plays music (bruh)
 
