@@ -1,4 +1,26 @@
+#+title: My Nix Conf
+#+author: cheeseburger om
+
 * My Nix Conf :3
-- Look, this is NOT gonna be finished until I fucking die or something man :sob:
+- Hours of configs, just to use it on 3 machines :sob:
 
 have fun (?) looking at this mess lmao
+
+** Information
+this is bc i know i'll forget what some options are and it might get too complicated for me
+
+*** hosts
+amogus = my thinkpad t14 1st gen laptop
+android = my motorola phone and samsung tablet
+aserver = old ass laptop that i'll use as a server because i'm bored
+
+*** User Options
+Default setting btw
+- Hyprland - ~hyprwm.enable = false~
+- Terminal Stuff - ~terminal.enable = false~
+- Gaming - ~gaming.enable = false~
+- DevStuff - ~devstuff.enable = false~
+- Other Packages - ~regularstuff.enable = false~
+
+*** Setting Options
+I should probably do that, huh?
