@@ -10,7 +10,7 @@
       availableKernelModules = [ "achi" "xhci_pci" "virtio_pic" "sr_mod" "virtio_blk" ];
       kernelModules = [  ];
     };
-    kernalModules = [ "kvm-amd" ];
+    kernelModules = [ "kvm-amd" ];
     extraModulePackages = [  ];
   };
 
