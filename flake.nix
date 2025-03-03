@@ -33,7 +33,7 @@
       };
     };
 
-    nixOnDroidConfiguration = {
+    nixOnDroidConfigurations = {
       android = nix-on-droid.lib.nixOnDroidConfiguration {
         pkgs = import nixpkgs { system = "aarch64-linux"; };
         modules = [
