@@ -2,7 +2,7 @@
 
 { pkgs, lib, config, ... }: {
   options = {
-    jellything.enable =
+    ineedstorage.enable =
       lib.mkEnableOption "enables storage";
   };
 

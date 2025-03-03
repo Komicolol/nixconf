@@ -3,7 +3,7 @@
 
 { pkgs, lib, config, inputs, ... }: {
   options = {
-    jellything.enable =
+    minecraftTs.enable =
       lib.mkEnableOption "enables minecraft";
   };
 

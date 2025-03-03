@@ -2,7 +2,7 @@
 
 { pkgs, lib, config, ... }: {
   options = {
-    jellything.enable =
+    musicthingy.enable =
       lib.mkEnableOption "enables music";
   };
 

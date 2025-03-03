@@ -1,7 +1,7 @@
 #+title: My Nix Conf
 #+author: cheeseburger om
 
-- Hours of configs, just to use it on 3 machines :sob:
+- Hours of configs, just to use it on 3 (+1) machines :sob:
 
 have fun (?) looking at this mess lmao
 
@@ -10,7 +10,7 @@ this is bc i know i'll forget what some options are and it might get too complic
 
 *** hosts
 - amogus = my thinkpad t14 1st gen laptop
-- android = my motorola phone and samsung tablet
+- android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
 - aserver = old ass laptop that i'll use as a server because i'm bored
 
 *** User Options
@@ -23,3 +23,10 @@ Default setting btw
 
 *** Setting Options
 I should probably do that, huh?
+
+**** Server Options (this is pretty dumb tbh)
+I haven't set these up at ALL.
+ - Minecraft - ~minecraftTs.enable = false~
+ - Jellyfin - ~jellything.enable = false~
+ - Music - ~musicthingy.enable = false~
+ - Storage - ~ineedstorage.enable = false~
