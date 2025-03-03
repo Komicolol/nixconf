@@ -7,7 +7,7 @@
 
   boot = {
     initrd = {
-      availableKernelModules = [ "achi" "xhci_pci" "virtio_pic" "sr_mod" "virtio_blk" ];
+      availableKernelModules = [ "ahci" "xhci_pci" "virtio_pic" "sr_mod" "virtio_blk" ];
       kernelModules = [  ];
     };
     kernelModules = [ "kvm-amd" ];
