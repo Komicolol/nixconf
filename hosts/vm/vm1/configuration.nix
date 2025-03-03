@@ -18,7 +18,7 @@
   };
   services.xserver.xkb = {
     layout = "au";
-    varient = "";
+    variant = "";
   };
 
   nixpkgs.config.allowUnfree = true;
