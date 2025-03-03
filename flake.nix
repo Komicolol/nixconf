@@ -31,6 +31,12 @@
           ./hosts/amogus/configuration.nix
         ];
       };
+      vm1 = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules =  [
+          ./hosts/vm/vm1/configuration.nix
+        ];
+      };
     };
 
     nixOnDroidConfigurations = {
