@@ -27,7 +27,16 @@
       libtool
       emacs29-pgtk
     ];
-
+    # for kanata thingy
+    boot.kernelModules = [ "uinput" ];
+    hardware.uinput.enable = true;
+    services.udev.extraRules = ''
+      KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+    '';
+    programs.gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
   };
 
 }

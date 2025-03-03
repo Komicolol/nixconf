@@ -2,5 +2,6 @@
 
   imports = [
     ./hyprwm.nix
+    ./xfce.nix
   ];
 }

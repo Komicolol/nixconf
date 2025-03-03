@@ -16,13 +16,15 @@ this is bc i know i'll forget what some options are and it might get too complic
 *** User Options
 Default setting btw
 - Hyprland - ~hyprwm.enable = false~
+- Xfce4 - ~xfceDE.enable = false~
 - Terminal Stuff - ~terminal.enable = false~
 - Gaming - ~gaming.enable = false~
 - DevStuff - ~devstuff.enable = false~
+- VMs - ~vmthings.enable = false~
 - Other Packages - ~regularstuff.enable = false~
 
 *** Setting Options
-I should probably do that, huh?
+I should probably do that, huh? (everything is needed...)
 
 **** Server Options (this is pretty dumb tbh)
 I haven't set these up at ALL.

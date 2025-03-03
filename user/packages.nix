@@ -7,7 +7,7 @@
   };
   config = lib.mkIf config.regularstuff.enable {
     environment.systemPackages = with pkgs; [
-      ncmpcpp
+      nh
       spotify
       webex
       keepassxc
