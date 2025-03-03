@@ -11,7 +11,7 @@
       kernelModules = [  ];
     };
     kernalModules = [ "kvm-amd" ];
-    extraModulesPackages = [  ];
+    extraModulePackages = [  ];
   };
 
   filesSystems."/" =
