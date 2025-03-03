@@ -16,7 +16,7 @@
     hostName = "vm1";
     networkmanager.enable = true;
   };
-  services.xerver.xkb = {
+  services.xserver.xkb = {
     layout = "au";
     varient = "";
   };
