@@ -6,7 +6,7 @@
       lib.mkEnableOption "enables music";
   };
 
-  config = lib.mkIf config.music.enable {
+  config = lib.mkIf config.musicthingy.enable {
     services.mopidy = {
       enable = true;
     };

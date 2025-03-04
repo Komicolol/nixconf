@@ -7,16 +7,11 @@
       lib.mkEnableOption "enables minecraft";
   };
 
-  config = lib.mkIf config.minecraft.enable {
-    imports = [ inputs.nix-minecraft.nixosModules.minecraft-servers ];
-    nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
-
+  config = lib.mkIf config.minecraftTs.enable {
     services.minecraft-servers = {
       enable = true;
       eula = true;
       openFirewall = true;
-
-      dataDir = "/var/lib/minecraft";
 
       servers = {
         survivalVanServer = {
@@ -32,7 +27,6 @@
           };
 
           symlinks = {
-            "mods" = /var/lib/minecraft/mods;
           };
         };
       };

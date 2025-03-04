@@ -23,7 +23,7 @@
     # };
   };
 
-  outputs = { self, nixpkgs, nix-on-droid, ... }@inputs: {
+  outputs = { self, nixpkgs, nix-on-droid, nix-minecraft, ... }@inputs: {
     
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
@@ -31,6 +31,11 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/amogus/configuration.nix
+          ./system/server/minecraft.nix
+          nix-minecraft.nixosModules.minecraft-servers
+          {
+            nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
+          }
         ];
       };
       vm1 = nixpkgs.lib.nixosSystem {

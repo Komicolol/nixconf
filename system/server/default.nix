@@ -2,10 +2,9 @@
 
 {
   imports = [
-    (import ./minecraft.nix {inherit inputs;})
-    ./storage.nix
+    ./storagething.nix
     ./music.nix
-    ./jellyfin.nix
+    ./jellything.nix
     ./docker.nix
   ];
 }

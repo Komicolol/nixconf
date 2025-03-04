@@ -21,6 +21,9 @@
   terminal.enable = true;
   vmthings.enable = true;
 
+  # Server type shit
+  minecraftTs.enable = true;
+
   # enable flakes you doofus
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 	

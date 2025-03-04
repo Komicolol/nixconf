@@ -8,7 +8,7 @@
     ./users
     ./services
     ./bluetooth
-    (import ./server {inherit inputs;})
+    ./server
   ];
 
   time.timeZone = "Australia/Perth";

@@ -6,7 +6,7 @@
       lib.mkEnableOption "enables storage";
   };
 
-  config = lib.mkIf config.storage.enable {
+  config = lib.mkIf config.ineedstorage.enable {
 
     # I'm not gonna lie, this look like too much effort LMAO
     # Just use syncthing or smth like idk man..
