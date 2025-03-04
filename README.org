@@ -32,3 +32,4 @@ I haven't set these up at ALL.
  - Jellyfin - ~jellything.enable = false~
  - Music - ~musicthingy.enable = false~
  - Storage - ~ineedstorage.enable = false~
+ - Docker - ~dockerContainer.enable = false~ (might just add this to server module directly)

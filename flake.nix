@@ -15,6 +15,7 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
 
     # home-manager = {
     #   url = "github:nix-community/home-manager";
@@ -27,12 +28,14 @@
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
+        system = "x86_64-linux";
         modules = [
           ./hosts/amogus/configuration.nix
         ];
       };
       vm1 = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
+        system = "x86_64-linux";
         modules =  [
           ./hosts/vm/vm1/configuration.nix
         ];

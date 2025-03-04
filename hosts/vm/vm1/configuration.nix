@@ -1,10 +1,10 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
     [
       ./hardwareconfiguration.nix
-      ./../../../system
+      (import ./../../../system {inherit inputs;})
     ];
   boot.loader.grub = {
     enable = true;

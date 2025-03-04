@@ -14,6 +14,7 @@
     services.minecraft-servers = {
       enable = true;
       eula = true;
+      openFirewall = true;
 
       dataDir = "/var/lib/minecraft";
 

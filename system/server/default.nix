@@ -1,10 +1,11 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
-    ./minecraft.nix
+    (import ./minecraft.nix {inherit inputs;})
     ./storage.nix
     ./music.nix
     ./jellyfin.nix
+    ./docker.nix
   ];
 }

@@ -6,7 +6,7 @@
       komico = {
         isNormalUser = true;
         description = "komico";
-        extraGroups = [ "networkmanager" "wheel" "input" "uinput" ];
+        extraGroups = [ "networkmanager" "wheel" "input" "uinput" "docker" ];
       };
     };
   };

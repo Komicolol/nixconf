@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -8,7 +8,7 @@
     ./users
     ./services
     ./bluetooth
-    # ./server
+    (import ./server {inherit inputs;})
   ];
 
   time.timeZone = "Australia/Perth";
