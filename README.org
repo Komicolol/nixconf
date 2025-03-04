@@ -11,7 +11,9 @@ this is bc i know i'll forget what some options are and it might get too complic
 *** hosts
 - amogus = my thinkpad t14 1st gen laptop
 - android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
-- aserver = old ass laptop that i'll use as a server because i'm bored
+- lapserver1 = old ass laptop that i'll use as a server because i'm bored
+- vm1 = a vm just to test server configs
+
 
 *** User Options
 Default setting btw
@@ -33,3 +35,4 @@ I haven't set these up at ALL.
  - Music - ~musicthingy.enable = false~
  - Storage - ~ineedstorage.enable = false~
  - Docker - ~dockerContainer.enable = false~ (might just add this to server module directly)
+ - sshd - ~sshdstuff.enable = false~

@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     rose-pine-hyprcursor = {
         url = "github:ndom91/rose-pine-hyprcursor";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -46,6 +47,13 @@
         system = "x86_64-linux";
         modules =  [
           ./hosts/vm/vm1/configuration.nix
+        ];
+      };
+      lapserver = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/homelab/lapserver/configuration.nix
         ];
       };
     };

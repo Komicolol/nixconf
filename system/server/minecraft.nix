@@ -20,13 +20,17 @@
           enable = true;
           package = pkgs.fabricServers.fabric-1_21_4;
 
-          serverProperties ={
+          serverProperties = {
+            gamemode = "survival";
+            simulation-distance = 10;
 
           };
 
           whitelist = {
 
           };
+
+          jvmOpts = "-Xms2048M -Xmx6114M";
 
           symlinks = {
           };
