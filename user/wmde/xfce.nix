@@ -13,6 +13,11 @@
     thunar-volman
     ];
 
+    services.gvfs = {
+      enable = true;
+      package = lib.mkForce pkgs.gnome.gvfs;
+    };
+
     services.xserver.enable = true;
     services.picom.enable = true;
 
