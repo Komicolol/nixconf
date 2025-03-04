@@ -13,7 +13,7 @@
 
   # Server Options
   sshdstuff.enable = true;
-  minecraftTs = true;
+  minecraftTs.enable = true;
   ineedstorage.enable = true;
   dockerContainer.enable = true;
   musicthingy.enable = true;
