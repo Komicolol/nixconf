@@ -23,8 +23,16 @@
     # };
   };
 
-  outputs = { self, nixpkgs, nix-on-droid, nix-minecraft, ... }@inputs: {
-    
+  ## A reminder of how FUCKING DUMB I AM AAAAAAAAAAAAAA
+  # outputs = { self, nixpkgs, nix-on-droid, nix-minecraft, ... }@inputs: {
+
+  outputs = inputs @ {
+    self,
+    nixpkgs,
+    nix-on-droid,
+    nix-minecraft,
+    ...
+  }: {
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -38,11 +46,6 @@
         system = "x86_64-linux";
         modules =  [
           ./hosts/vm/vm1/configuration.nix
-          ./system/server/minecraft.nix
-          nix-minecraft.nixosModules.minecraft-servers
-          {
-            nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
-          }
         ];
       };
     };

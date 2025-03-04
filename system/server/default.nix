@@ -6,5 +6,7 @@
     ./music.nix
     ./jellything.nix
     ./docker.nix
+    ./minecraft.nix
+    inputs.nix-minecraft.nixosModules.minecraft-servers
   ];
 }

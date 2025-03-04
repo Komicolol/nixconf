@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   options = {
@@ -22,6 +22,14 @@
       obs-studio
       feh
       vlc
+
+      # still haven't gotten home.nix configured yet but wtvr.
+      dracula-icon-theme
+      catppuccin-gtk
+
+      # inputs thingy :3
+      inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+      inputs.zen-browser.packages.${pkgs.system}.default
     ];
 
     programs.firefox.enable = true;
