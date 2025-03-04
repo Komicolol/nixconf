@@ -8,5 +8,6 @@
     ./docker.nix
     ./minecraft.nix
     inputs.nix-minecraft.nixosModules.minecraft-servers
+    ./sshd.nix
   ];
 }
