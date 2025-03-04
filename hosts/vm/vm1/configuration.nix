@@ -4,8 +4,11 @@
   imports =
     [
       ./hardwareconfiguration.nix
-      (import ./../../../system {inherit inputs;})
+      ./../../../system
     ];
+
+  minecraftTs.enable = true;
+
   boot.loader.grub = {
     enable = true;
     device = "/dev/vda";
