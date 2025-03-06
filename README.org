@@ -32,7 +32,6 @@ I should probably do that, huh? (everything is needed...)
 I haven't set these up at ALL.
  - Minecraft - ~minecraftTs.enable = false~
  - Jellyfin - ~jellything.enable = false~
- - Music - ~musicthingy.enable = false~
  - Storage - ~ineedstorage.enable = false~
  - Docker - ~dockerContainer.enable = false~ (might just add this to server module directly)
  - sshd - ~sshdstuff.enable = false~

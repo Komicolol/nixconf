@@ -16,7 +16,6 @@
   minecraftTs.enable = true;
   ineedstorage.enable = true;
   dockerContainer.enable = true;
-  musicthingy.enable = true;
   jellything.enable = true;
 
   # Bootloader.

@@ -10,6 +10,7 @@
     services.jellyfin = {
       enable = true;
       openFirewall = true;
+      user="komico";
     };
 
     environment.systemPackages = with pkgs; [
