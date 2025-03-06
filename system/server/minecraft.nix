@@ -15,10 +15,6 @@
       eula = true;
       openFirewall = true;
 
-      ## I could probably do something better, but i didn't really make this useable for ppl
-      ## other than me so :shrug:
-      dataDir = "/home/komico/MCServers";
-
       servers = {
         survivalVanServer = {
           enable = true;
