@@ -35,10 +35,5 @@
 
     programs.firefox.enable = true;
 
-    # Making nh work or smth idk man i'm tired af
-    environment.sessionVariables = {
-      FLAKE = "/home/komico/nixconf";
-    };
-
   };
 }

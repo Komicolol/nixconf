@@ -25,4 +25,8 @@
     LC_TELEPHONE = "en_AU.UTF-8";
     LC_TIME = "en_AU.UTF-8";
   };
+  # Making nh work or smth idk man i'm tired af
+  environment.sessionVariables = {
+    FLAKE = "/home/komico/nixconf";
+  };
 }
