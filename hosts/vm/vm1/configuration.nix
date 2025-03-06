@@ -8,6 +8,8 @@
     ];
 
   minecraftTs.enable = true;
+  jellything.enable = true;
+  sshdstuff.enable = true;
 
   boot.loader.grub = {
     enable = true;
