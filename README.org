@@ -35,3 +35,4 @@ I haven't set these up at ALL.
  - Storage - ~ineedstorage.enable = false~
  - Docker - ~dockerContainer.enable = false~ (might just add this to server module directly)
  - sshd - ~sshdstuff.enable = false~
+ - random pkgs - ~syspkgs.enable = false~
