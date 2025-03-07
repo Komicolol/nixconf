@@ -29,4 +29,6 @@
   environment.sessionVariables = {
     FLAKE = "/home/komico/nixconf";
   };
+  # enable flakes you doofus
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }

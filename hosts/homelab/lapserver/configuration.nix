@@ -24,7 +24,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "lapserver"; # Define your hostname.
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
