@@ -25,7 +25,7 @@
       texliveFull
       gnumake
       libtool
-      emacs29-pgtk
+      emacs30-pgtk
     ];
     # for kanata thingy
     boot.kernelModules = [ "uinput" ];
