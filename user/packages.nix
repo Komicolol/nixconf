@@ -23,6 +23,7 @@
       feh
       vlc
       samba
+      jellyfin-tui
 
       # still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme
