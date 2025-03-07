@@ -28,6 +28,10 @@
       package = pkgs.kdePackages.sddm;
     };
 
+    environment.systemPackages = with pkgs; [
+      catppuccin-sddm
+    ];
+
     services.xserver.xkb = {
       layout = "au";
       variant = "";

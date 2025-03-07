@@ -23,16 +23,16 @@
       feh
       vlc
       samba
-      jellyfin-tui
+      # jellyfin-tui
       mpv
 
-      # still haven't gotten home.nix configured yet but wtvr.
+      ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme
       catppuccin-gtk
 
-      # inputs thingy :3
+      ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      inputs.zen-browser.packages.${pkgs.system}.default
+      # inputs.zen-browser.packages.${pkgs.system}.default
     ];
 
     programs.firefox.enable = true;
