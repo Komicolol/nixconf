@@ -1,0 +1,15 @@
+keys:
+  - &users:
+      - &komico age1xtx3ct53uanjzqksekxrcka2r2wzcjq7qgr34jx0vpmp9nh8wp4qe3d9ch
+  - &hosts:
+      - &vm1 age192yz0r38dxx9z9mthmtwwvept9sq9drr9jq7pu2vh3wlpnmztfhsxm8uec
+      - &amogus age1ehs5za6dgxpwat4yyjk485m2hzvfrcrqaq5c5cuk5qq2yvzn0yastjhfd6
+      - &lapserver age14k29jhkw94jgqp5st6wac866p6e3gsvgg93vf3qptgpsteya9yaqjy0ljf
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *komico
+          - *vm1
+          - *amogus
+          - *lapserver

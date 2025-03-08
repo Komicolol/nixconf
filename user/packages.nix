@@ -25,6 +25,7 @@
       samba
       # jellyfin-tui
       mpv
+      age
 
       ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme

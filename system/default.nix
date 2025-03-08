@@ -9,6 +9,7 @@
     ./services
     ./bluetooth
     ./server
+    ./secrets
   ];
 
   time.timeZone = "Australia/Perth";
@@ -29,6 +30,15 @@
   environment.sessionVariables = {
     FLAKE = "/home/komico/nixconf";
   };
+
   # enable flakes you doofus
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # damn you Stallman!!
+  nixpkgs.config.allowUnfree = true;
+
+  # TODO: Make a packages.nix file later
+  environment.systemPackages = with pkgs; [
+    sops
+  ];
 }

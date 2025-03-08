@@ -19,7 +19,7 @@
 
   # Server type shit
   minecraftTs.enable = false;
-
+  sshdstuff.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
