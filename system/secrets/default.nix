@@ -15,5 +15,8 @@
       keyFile = "/var/lib/sops-nix/key.txt";
       generateKey = true;
     };
+    secrets = {
+      "private_message/yeah" = {};
+    };
   };
 }
