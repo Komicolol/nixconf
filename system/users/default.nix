@@ -10,7 +10,7 @@
       komico = {
         isNormalUser = true;
         description = "komico";
-        hashPasswordFile = config.sops.secets.komico-passwd.path;
+        hashPasswordFile = config.sops.secrets.komico-passwd.path;
         extraGroups = [
           "networkmanager"
           "wheel"
