@@ -23,5 +23,7 @@
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
     };
+
+    programs.gamemode.enable = true;
   };
 }
