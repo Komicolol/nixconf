@@ -10,7 +10,7 @@
       komico = {
         isNormalUser = true;
         description = "komico";
-        # hashPasswordFile = config.sops.secets.komico-passwd.path;
+        hashPasswordFile = config.sops.secets.komico-passwd.path;
         extraGroups = [
           "networkmanager"
           "wheel"
@@ -31,6 +31,10 @@
   };
 
   sops.secrets.rootpasswd = {
+    sopsFile = ./secrets.yaml;
+    neededForUsers = true;
+  };
+  sops.secrets.komico-passwd = {
     sopsFile = ./secrets.yaml;
     neededForUsers = true;
   };
