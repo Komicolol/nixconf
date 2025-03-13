@@ -5,7 +5,7 @@
     mutableUsers = false;
     users = {
       root = {
-        hashPasswordFile = config.sops.secrets.rootpasswd.path;
+        hashedPasswordFile = config.sops.secrets.rootpasswd.path;
       };
       komico = {
         isNormalUser = true;
