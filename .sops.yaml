@@ -13,3 +13,10 @@ creation_rules:
           - *vm1
           - *amogus
           - *lapserver
+  - path_regex: /system/users/secrets.yaml$
+    key_groups:
+      - age:
+          - *komico
+          - *vm1
+          - *amogus
+          - *lapserver

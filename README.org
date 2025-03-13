@@ -39,10 +39,15 @@ Toggleable because why not :)
 
 ** Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...
-*** Inspirations
-To the people that dug my hole deeper:
-- [[https:www.youtube.com/c/NoBoilerplate][No Boilerplate]] - The person who got me into this mess in the first place
-- [[https:github.com/sioodmy/dotfiles][Sioodmy's Dotfiles]] - The NixOS config that I was unfortunately inspired by (nice config tho)
-- [[https:www.youtube.com/@vimjoyer][Vimjoyer]] - Honestly, I would've probably switched back without people like him
-- [[https:www.youtube.com/@librephoenix][LibrePhoenix]] - Another NixOS content creator that helped me a lot
+*** Some helpful resources
+Just in case I forget something:
+- [[https://nixos-and-flakes.thiscute.world/][NixOS & Flakes Book]] - very helpful
+- [[https://nixos.org/manual/nixos/stable/][NixOS Manual]] & [[https://nixos.wiki/][NixOS Wiki]] - Also very helpful
+- [[https://mynixos.com/][MyNixOS]] - search thingy
+*** Special Thanks
+To the people that helped with my experience:
+- [[https://www.youtube.com/c/NoBoilerplate][No Boilerplate]] - The person who got me into this mess in the first place
+- [[https://github.com/sioodmy/dotfiles][sioodmy's Nix Config]] - The NixOS config that I was unfortunately first inspired by (nice config tho)
+- [[https://www.youtube.com/@vimjoyer][Vimjoyer]] - Honestly, I would've probably switched back without people like him
+- [[https://www.youtube.com/@librephoenix][Librepheonix]] - Another NixOS content creator that helped me a lot
 - I'll add more if I remember...

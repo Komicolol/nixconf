@@ -41,4 +41,7 @@
   environment.systemPackages = with pkgs; [
     sops
   ];
+
+  # I actually have no idea where to put this...
+  programs.zsh.enable = true;
 }

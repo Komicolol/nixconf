@@ -20,6 +20,7 @@
   # Server type shit
   minecraftTs.enable = false;
   sshdstuff.enable = true;
+  myMariaDB.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -8,7 +8,6 @@
 
   config = lib.mkIf config.vmthings.enable {
     programs.virt-manager.enable = true;
-    users.groups.libvirtd.members = ["komico"];
     virtualisation = {
       libvirtd.enable = true;
       spiceUSBRedirection.enable = true;
