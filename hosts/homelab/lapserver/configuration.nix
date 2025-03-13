@@ -18,7 +18,7 @@
   dockerContainer.enable = true;
   jellything.enable = true;
   syspkgs.enable = true;
-  ElephantQL.enable = true;
+  myMariaDB.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
