@@ -9,6 +9,7 @@
   config = lib.mkIf config.immichphotos.enable {
     services.immich= {
       enable = true;
+      openFirewall = true;
       port = 2283;
     };
   };
