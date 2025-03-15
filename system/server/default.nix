@@ -11,4 +11,7 @@
     ./syspkgs.nix
     ./mysql.nix
   ];
+
+  sshdstuff.enable =
+      lib.mkDefault true;
 }

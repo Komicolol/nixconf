@@ -11,5 +11,6 @@
     mononoki
     material-icons
     material-design-icons
+    icomoon-feather
     ];
 }
