@@ -26,6 +26,7 @@
       # jellyfin-tui
       mpv
       age
+      scrcpy
 
       ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme

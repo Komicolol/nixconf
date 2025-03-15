@@ -10,6 +10,7 @@
     ./sshd.nix
     ./syspkgs.nix
     ./mysql.nix
+    ./postgresql.nix
   ];
 
   sshdstuff.enable =

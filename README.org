@@ -1,9 +1,8 @@
 #+title: My Nix Conf
 #+author: cheeseburger om
 
-- Hours of configs, just to use it on 3 (+1) machines :sob:
-
-have fun (?) looking at this mess lmao
+Hours of configs, just to use it on 3 (+1) machines :sob:
+have fun (?) looking at this mess lmao. good luck trying not to vomit!!
 
 ** Information
 this is bc i know i'll forget what some options are and it might get too complicated for me
@@ -13,29 +12,20 @@ this is bc i know i'll forget what some options are and it might get too complic
 - android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
 - lapserver1 = old ass laptop that i'll use as a server because i'm bored
 - vm1 = a vm just to test server configs
+*** Options
+- [[./system/README.org][System Options]]
+- [[./user/README.org][User Options]]
+- [[./system/server/README.org][System Options]]
+** If you want to use my config..
+Don't. I'm just joking, go copy a template of mine and insert your hardware config file. Look into the options above just to see what you can use.
+*** CHANGE THIS FILE SPECIFICALLY BTWWWW
+- [[./system/users/default.nix][User Configuration]] - *CHANGE PUB SSH KEY AND MAYBE REMOVE PASSWORD FILES IDKKK*
+*** Templates
+- [[./hosts/templates/desktop/configuration.nix][Desktop Template]]
+- [[./hosts/templates/server/configuration.nix][Server Template]]
+Just a heads up, this is a personal config of mine and is made just for me. So some things might not work for some people, but whatever. Oh, and you should have some knowledge of Nix before using this.
 
-
-*** User Options
-Default setting btw
-- Hyprland - ~hyprwm.enable = false~
-- Xfce4 - ~xfceDE.enable = false~
-- Terminal Stuff - ~terminal.enable = false~
-- Gaming - ~gaming.enable = false~
-- DevStuff - ~devstuff.enable = false~
-- VMs - ~vmthings.enable = false~
-- Other Packages - ~regularstuff.enable = false~
-
-*** Setting Options
-I should probably do that, huh? (everything is needed...)
-
-**** Server Options
-Toggleable because why not :)
- - Minecraft - ~minecraftTs.enable = false~
- - Jellyfin - ~jellything.enable = false~
- - Storage - ~ineedstorage.enable = false~
- - Docker - ~dockerContainer.enable = false~ (might just add this to server module directly)
- - sshd - ~sshdstuff.enable = false~
- - random pkgs - ~syspkgs.enable = false~
+/oh why even make this section then/ I needed to do something to procrastinate, I don't wanna do school work ok :sob:
 
 ** Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...
@@ -47,7 +37,8 @@ Just in case I forget something:
 *** Special Thanks
 To the people that helped with my experience:
 - [[https://www.youtube.com/c/NoBoilerplate][No Boilerplate]] - The person who got me into this mess in the first place
-- [[https://github.com/sioodmy/dotfiles][sioodmy's Nix Config]] - The NixOS config that I was unfortunately first inspired by (nice config tho)
+- [[https://github.com/sioodmy/dotfiles][sioodmy's dotfiles]] - The NixOS config that I was unfortunately first inspired by (nice config tho)
 - [[https://www.youtube.com/@vimjoyer][Vimjoyer]] - Honestly, I would've probably switched back without people like him
 - [[https://www.youtube.com/@librephoenix][Librepheonix]] - Another NixOS content creator that helped me a lot
+- [[https://github.com/Misterio77/nix-config][Misterio77's Nix Config]] - This helped me out a lot lmao, tysm!!!
 - I'll add more if I remember...

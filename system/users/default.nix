@@ -2,14 +2,17 @@
 
 {
   users = {
+    # probably change this to true if you wanna set the passwd manually.
     mutableUsers = false;
     users = {
       root = {
+        # change or remove this.
         hashedPasswordFile = config.sops.secrets.rootpasswd.path;
       };
       komico = {
         isNormalUser = true;
         description = "komico";
+        # Use ur own password file or just remove it.
         hashedPasswordFile = config.sops.secrets.komico-passwd.path;
         extraGroups = [
           "networkmanager"
@@ -30,6 +33,7 @@
     };
   };
 
+  # either remove this or get ur own secrets file and replace it.
   sops.secrets.rootpasswd = {
     sopsFile = ./secrets.yaml;
     neededForUsers = true;
