@@ -25,7 +25,7 @@ Don't. I'm just joking, go copy a template of mine and insert your hardware conf
 - [[./hosts/templates/server/configuration.nix][Server Template]]
 Just a heads up, this is a personal config of mine and is made just for me. So some things might not work for some people, but whatever. Oh, and you should have some knowledge of Nix before using this.
 
-/oh why even make this section then/ I needed to do something to procrastinate, I don't wanna do school work ok :sob:
+/oh why even make this section then/ I don't wanna do school work, so I needed to so something to procrastinate ok :sob:
 
 ** Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...
