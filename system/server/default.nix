@@ -11,6 +11,7 @@
     ./syspkgs.nix
     ./mysql.nix
     ./postgresql.nix
+    ./photosimmichyeah.nix
   ];
 
   sshdstuff.enable =

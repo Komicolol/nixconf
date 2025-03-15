@@ -1,8 +1,7 @@
-#+title: My Nix Conf
+#+title: My Nix Confing
 #+author: cheeseburger om
 
-Hours of configs, just to use it on 3 (+1) machines :sob:
-have fun (?) looking at this mess lmao. good luck trying not to vomit!!
+A Nix configuration of all time, and i hope it won't spiral out of control /too/ quickly. hopefully.
 
 ** Information
 this is bc i know i'll forget what some options are and it might get too complicated for me
@@ -12,17 +11,22 @@ this is bc i know i'll forget what some options are and it might get too complic
 - android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
 - lapserver1 = old ass laptop that i'll use as a server because i'm bored
 - vm1 = a vm just to test server configs
+
 *** Options
+me realising that all it's better to have it in different files:
 - [[./system/README.org][System Options]]
 - [[./user/README.org][User Options]]
 - [[./system/server/README.org][System Options]]
+
 ** If you want to use my config..
 Don't. I'm just joking, go copy a template of mine and insert your hardware config file. Look into the options above just to see what you can use.
 *** CHANGE THIS FILE SPECIFICALLY BTWWWW
 - [[./system/users/default.nix][User Configuration]] - *CHANGE PUB SSH KEY AND MAYBE REMOVE PASSWORD FILES IDKKK*
+
 *** Templates
 - [[./hosts/templates/desktop/configuration.nix][Desktop Template]]
 - [[./hosts/templates/server/configuration.nix][Server Template]]
+
 Just a heads up, this is a personal config of mine and is made just for me. So some things might not work for some people, but whatever. Oh, and you should have some knowledge of Nix before using this.
 
 /oh why even make this section then/ I don't wanna do school work, so I needed to so something to procrastinate ok :sob:
