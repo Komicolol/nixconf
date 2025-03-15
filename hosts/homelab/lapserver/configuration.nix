@@ -19,6 +19,7 @@
   jellything.enable = true;
   syspkgs.enable = true;
   myMariaDB.enable = true;
+  immichphotos.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
