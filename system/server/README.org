@@ -1,8 +1,5 @@
 #+title: Server Options
 
-I'm not gonna lie, I only did this because it was a hassle going back to the top README file...
-
-*** Server Options
 Toggleable because i said so :3
 - TODO: probably put the server stuff in their different directories for better management. (for me at least)
 
