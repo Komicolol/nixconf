@@ -12,6 +12,7 @@
   sshdstuff.enable = true;
   syspkgs.enable = true;
   dockerContainer.enable = true;
+  immichphotos.enable = true;
 
   boot.loader.grub = {
     enable = true;

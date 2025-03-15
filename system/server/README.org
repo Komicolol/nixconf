@@ -17,4 +17,4 @@ TODO: probably but the server stuff in their different directories for better ma
 **** Fun stuff
 - Minecraft - ~minecraftTs.enable = false~
 - Jellyfin - ~jellything.enable = false~
-- Immich (photos) - ~immichphotos = false~
+- Immich (photos) - ~immichphotos.enable = false~
