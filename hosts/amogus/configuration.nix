@@ -11,7 +11,7 @@
   # User options
   hyprwm.enable = true;
   xfceDE.enable = true;
-  gaming.enable = false;
+  gaming.enable = true;
   devstuff.enable = true;
   regularstuff.enable = true;
   terminal.enable = true;
