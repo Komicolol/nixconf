@@ -14,4 +14,4 @@ Toggleable because i said so :3
 **** Fun stuff
 - Minecraft - ~minecraftTs.enable = false~
 - Jellyfin - ~jellything.enable = false~
-- Immich (photos) - ~immichphotos.enable = false~
+- Immich (photos) *broken rn* - ~immichphotos.enable = false~

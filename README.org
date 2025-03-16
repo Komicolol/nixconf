@@ -1,4 +1,4 @@
-#+title: My Nix Confing
+#+title: My Nix Config
 #+author: cheeseburger om
 
 A Nix configuration of all time, and i hope it won't spiral out of control /too/ quickly. hopefully.

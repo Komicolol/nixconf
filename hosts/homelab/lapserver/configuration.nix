@@ -11,7 +11,7 @@
       ./../../../system
     ];
 
-  # Server Options
+  ## Server Options
   sshdstuff.enable = true;
   minecraftTs.enable = true;
   ineedstorage.enable = true;
@@ -19,7 +19,8 @@
   jellything.enable = true;
   syspkgs.enable = true;
   myMariaDB.enable = true;
-  immichphotos.enable = true;
+  # broken.
+  immichphotos.enable = false;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
