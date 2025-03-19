@@ -19,8 +19,10 @@
   jellything.enable = true;
   syspkgs.enable = true;
   myMariaDB.enable = true;
-  # broken.
-  immichphotos.enable = false;
+  firewall.enable = true;
+  # NOT ANYMORE BABYYYY
+  immichphotos.enable = true;
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -28,18 +30,7 @@
 
   networking.hostName = "lapserver"; # Define your hostname.
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "au";
-    variant = "";
-  };
-
-  # Enable automatic login for the user.
-  services.getty.autologinUser = "komico";
-
-
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
     neovim

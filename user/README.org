@@ -2,10 +2,16 @@
 Yeah!
 
 *** User Options
-- Hyprland - ~hyprwm.enable = false~
-- Xfce4 - ~xfceDE.enable = false~
-- Terminal Stuff - ~terminal.enable = false~
-- Gaming - ~gaming.enable = false~
-- DevStuff - ~devstuff.enable = false~
-- VMs - ~vmthings.enable = false~
 - Other Packages - ~regularstuff.enable = false~
+**** WM/DE
+- Hyprland - ~hyprwm.enable = false~
+- Xfce4+i3 - ~xfceDE.enable = false~
+- sddm - ~sddmDM.enable = true~
+**** Devstuff
+- DevStuff - ~devstuff.enable = false~
+- Kanata - ~kanata.enable = true~
+- VMs - ~vmthings.enable = false~
+**** Gaming
+- Gaming - ~gaming.enable = false~
+**** Terminal
+- Terminal Stuff - ~terminal.enable = false~

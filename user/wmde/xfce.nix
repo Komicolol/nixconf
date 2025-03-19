@@ -18,20 +18,21 @@
       package = lib.mkForce pkgs.gnome.gvfs;
     };
 
-    services.xserver.enable = true;
+    # xfce + i3 bc why not
     services.picom.enable = true;
 
-    services.xserver.desktopManager.xfce.enable = true;
-    services.xserver.displayManager.sddm = {
+    services.xserver = {
       enable = true;
-      theme = "catppuccin-mocha";
-      package = pkgs.kdePackages.sddm;
+      desktopManager = {
+        xterm.enable = false;
+        xfce = {
+          enable = true;
+          noDesktop = true;
+          enableXfwm = false;
+        };
+      };
+      windowManager.i3.enable = true;
     };
-
-    environment.systemPackages = with pkgs; [
-      catppuccin-sddm
-    ];
-
     services.xserver.xkb = {
       layout = "au";
       variant = "";

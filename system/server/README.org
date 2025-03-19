@@ -8,10 +8,11 @@ Toggleable because i said so :3
 - random pkgs - ~syspkgs.enable = false~
 - Storage - ~ineedstorage.enable = false~
 - Docker - ~dockerContainer.enable = false~
+- firewall - ~firewall.enable = false~
 **** Database Things
 - Postgresql - ~elephantQL.enable = false~
 - MySQL (MariaDB) - ~MyMariaDB = false~
 **** Fun stuff
 - Minecraft - ~minecraftTs.enable = false~
 - Jellyfin - ~jellything.enable = false~
-- Immich (photos) *broken rn* - ~immichphotos.enable = false~
+- Immich (photos) - ~immichphotos.enable = false~

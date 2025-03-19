@@ -12,6 +12,7 @@
     ./mysql.nix
     ./postgresql.nix
     ./photosimmichyeah.nix
+    ./firewall.nix
   ];
 
   sshdstuff.enable =

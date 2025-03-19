@@ -7,27 +7,27 @@
   };
   config = lib.mkIf config.regularstuff.enable {
     environment.systemPackages = with pkgs; [
-      nh
-      spotify
-      webex
-      keepassxc
-      gvfs
-      zip
-      unzip
-      coreutils
-      brightnessctl
-      libreoffice
-      vesktop
-      yt-dlp
-      obs-studio
-      feh
-      vlc
-      samba
-      # jellyfin-tui
-      mpv
+      # Random stuff that *might* be important
       age
-      scrcpy
+      brightnessctl
+      coreutils
+      feh
+      gvfs
+      keepassxc
+      libreoffice
+      mpv
+      nh
+      obs-studio
       packwiz
+      samba
+      scrcpy
+      spotify
+      unzip
+      vesktop
+      vlc
+      webex
+      yt-dlp
+      zip
 
       ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme

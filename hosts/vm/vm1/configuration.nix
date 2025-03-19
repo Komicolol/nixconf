@@ -13,6 +13,7 @@
   syspkgs.enable = true;
   dockerContainer.enable = true;
   immichphotos.enable = true;
+  firewall.enable = true;
 
   boot.loader.grub = {
     enable = true;
