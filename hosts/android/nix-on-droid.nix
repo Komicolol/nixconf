@@ -9,6 +9,7 @@
   # User options
   terminal.enable = true;
   devstuff.enable = true;
+  kanata.enable = false;
 
   # Something something, state vers.
   system.stateVersion = "24.05";
