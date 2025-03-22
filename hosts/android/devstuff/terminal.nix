@@ -8,7 +8,7 @@
   };
 
   config = lib.mkIf config.terminal.enable {
-    environment.systemPackages = with pkgs; [
+    environment.packages = with pkgs; [
       btop
       starship
       cava

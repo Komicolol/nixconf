@@ -7,7 +7,7 @@
   };
 
   config = lib.mkIf config.devstuff.enable {
-    environment.systemPackages = with pkgs; [
+    environment.packages = with pkgs; [
       aspell
       (aspellWithDicts (dicts: with dicts; [
         en
