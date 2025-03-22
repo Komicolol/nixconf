@@ -1,5 +1,6 @@
 { config, lib, pkgs, ... }:
 
+
 {
   options = {
     terminal.enable =
@@ -8,8 +9,6 @@
 
   config = lib.mkIf config.terminal.enable {
     environment.systemPackages = with pkgs; [
-      kitty # wezterm might be cool idk
-      wezterm # oh wow look at that
       btop
       starship
       cava

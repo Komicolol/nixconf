@@ -32,5 +32,4 @@
       enableSSHSupport = true;
     };
   };
-
 }

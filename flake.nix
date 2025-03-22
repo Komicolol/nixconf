@@ -1,5 +1,5 @@
 {
-  description = "dumbass teen that decided that instead of learning a normal lanugage they'd rather learn this instead...";
+  description = "local dumbass that decided that instead of learning a normal lanugage they'd rather learn this instead...";
 
   inputs = {
     # Needed Inputs
@@ -32,9 +32,6 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
   };
-
-  ## A reminder of how FUCKING DUMB I AM AAAAAAAAAAAAAA
-  # outputs = { self, nixpkgs, nix-on-droid, nix-minecraft, ... }@inputs: {
 
   outputs = inputs @ {
     self,
