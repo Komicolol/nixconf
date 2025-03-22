@@ -26,10 +26,5 @@
       stow
       texliveFull
     ];
-
-    programs.gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
   };
 }
