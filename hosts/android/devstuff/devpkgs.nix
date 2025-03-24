@@ -10,7 +10,7 @@
     environment.packages = with pkgs; [
       clang
       cmake
-      emacs30-pgtk
+      emacs30
       fd
       gnumake
       libtool
@@ -19,6 +19,7 @@
       ripgrep
       stow
       texliveFull
+      neovim
     ];
   };
 }

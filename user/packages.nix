@@ -35,7 +35,7 @@
 
       ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      # inputs.zen-browser.packages.${pkgs.system}.default
+      inputs.zen-browser.packages.${pkgs.system}.default
     ];
 
     programs.firefox.enable = true;

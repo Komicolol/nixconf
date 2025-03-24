@@ -22,6 +22,8 @@
   firewall.enable = true;
   # NOT ANYMORE BABYYYY
   immichphotos.enable = true;
+  # ew.
+  aiTypeShii.enable = true;
 
 
   # Bootloader.

@@ -1,9 +1,9 @@
 #+title: Server Options
 
 Toggleable because i said so :3
-- TODO: probably put the server stuff in their different directories for better management. (for me at least)
+- TODO: a README file in the other directories, because why not :3
 
-**** The Standard Stuff
+**** The Essentials
 - sshd - ~sshdstuff.enable = true~
 - random pkgs - ~syspkgs.enable = false~
 - Storage - ~ineedstorage.enable = false~
@@ -12,7 +12,8 @@ Toggleable because i said so :3
 **** Database Things
 - Postgresql - ~elephantQL.enable = false~
 - MySQL (MariaDB) - ~MyMariaDB = false~
-**** Fun stuff
+**** For the funsies
 - Minecraft - ~minecraftTs.enable = false~
 - Jellyfin - ~jellything.enable = false~
 - Immich (photos) - ~immichphotos.enable = false~
+- AI thing - ~aiTypeShii.enable = false~
