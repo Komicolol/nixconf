@@ -14,10 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Server Inputs
+    ## Server Inputs
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
 
-    # User Inputs
+    ## User Inputs
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
        inputs.nixpkgs.follows = "nixpkgs";
@@ -27,6 +27,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+
+    ## Why do i even have this lmao
     # home-manager = {
     #   url = "github:nix-community/home-manager";
     #   inputs.nixpkgs.follows = "nixpkgs";

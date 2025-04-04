@@ -13,7 +13,6 @@
     ];
 
     # roblox/minecraft bedrock LOL
-
     services.flatpak.enable = true;
 
     # games, infinite games, but no games

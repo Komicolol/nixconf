@@ -8,6 +8,9 @@
       ./../../../user
     ];
 
+  # System Settings
+  tlpSettings.enable = true;
+
   # Turn these false if you don't need em.
   hyprwm.enable = true;
   xfceDE.enable = true;
@@ -32,6 +35,8 @@
        wget
        curl
   ];
+
+  ## Destop-Specific Configs!
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

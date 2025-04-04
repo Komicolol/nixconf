@@ -19,10 +19,11 @@
     };
 
     # xfce + i3 bc why not
-    services.picom.enable = true;
+    environment.systemPackages = with pkgs; [ picom-next ];
 
     services.xserver = {
       enable = true;
+      enableTearFree = true; # bruh.
       desktopManager = {
         xterm.enable = false;
         xfce = {

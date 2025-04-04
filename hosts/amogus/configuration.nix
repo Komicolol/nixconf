@@ -8,10 +8,13 @@
       ./../../user
     ];
 
+  # System Settings
+  tlpSettings.enable = true;
+
   # User options
   hyprwm.enable = true;
   xfceDE.enable = true;
-  gaming.enable = true;
+  gaming.enable = false;
   devstuff.enable = true;
   regularstuff.enable = true;
   terminal.enable = true;
@@ -29,8 +32,6 @@
 
   networking.hostName = "amogus"; # Define your hostname.
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   environment.systemPackages = with pkgs; [
        neovim 
@@ -38,6 +39,10 @@
        wget				# do you use this?
        curl				# *random script go!*
   ];
+
+  ## Amogus-Specific Configs!
+  services.printing.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

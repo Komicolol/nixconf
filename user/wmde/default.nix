@@ -1,4 +1,4 @@
-{ pkgs, lib, ...}: {
+{ pkgs, lib, inputs,  ...}: {
 
   imports = [
     ./hyprwm.nix
@@ -7,4 +7,9 @@
   ];
   sddmDM.enable =
     lib.mkDefault true;
+  qt = {
+    enable = true;
+    platformTheme = "qt5ct";
+  };
+
 }

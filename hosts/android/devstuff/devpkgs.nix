@@ -20,6 +20,7 @@
       stow
       texliveFull
       neovim
+      git
     ];
   };
 }

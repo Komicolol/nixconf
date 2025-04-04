@@ -10,6 +10,7 @@
     ./bluetooth
     ./server
     ./secrets
+    ./laptop
   ];
 
   time.timeZone = "Australia/Perth";

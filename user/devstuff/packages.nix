@@ -16,7 +16,7 @@
       ]))
       clang
       cmake
-      emacs30-pgtk
+      emacs-gtk
       fd
       gnumake
       libtool
