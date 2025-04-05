@@ -24,6 +24,7 @@
   immichphotos.enable = true;
   # ew.
   aiTypeShii.enable = true;
+  moneroYay.enable = true;
 
 
   # Bootloader.

@@ -15,3 +15,5 @@ Yeah!
 - Gaming - ~gaming.enable = false~
 **** Terminal
 - Terminal Stuff - ~terminal.enable = false~
+**** User Services
+- Weylus thing - ~weylusThing.enable = false~

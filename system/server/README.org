@@ -1,7 +1,6 @@
 #+title: Server Options
 
 Toggleable because i said so :3
-- TODO: a README file in the other directories, because why not :3
 
 **** The Essentials
 - sshd - ~sshdstuff.enable = true~

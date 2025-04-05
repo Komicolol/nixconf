@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+
+  # TODO put this in a different file
   services.syncthing = {
   enable = true;
   openDefaultPorts = true;

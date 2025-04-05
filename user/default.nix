@@ -11,5 +11,6 @@
     ./devstuff
     ./packages.nix
     ./vms
+    ./userServices
   ];
 }

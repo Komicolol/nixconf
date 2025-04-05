@@ -33,6 +33,8 @@
       nwg-look
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       obsidian
+      krita
+      monero-gui
 
 
       ## still haven't gotten home.nix configured yet but wtvr.

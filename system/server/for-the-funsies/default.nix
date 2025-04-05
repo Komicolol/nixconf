@@ -14,5 +14,8 @@
 
     # this, not so much.
     ./jellything.nix
+
+    # i love miners!
+    ./moneroyay.nix
   ];
 }

@@ -19,6 +19,7 @@
   regularstuff.enable = true;
   terminal.enable = true;
   vmthings.enable = true;
+  weylusThing.enable = true;
 
   # Server type shit
   minecraftTs.enable = false;

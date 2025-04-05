@@ -25,6 +25,7 @@
       ripgrep
       stow
       texliveFull
+      clang-tools
     ];
 
     programs.gnupg.agent = {

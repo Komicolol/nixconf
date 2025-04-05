@@ -1,2 +1,6 @@
 #+title: System Options
 I mean I practically need all of them so....
+
+* Optional Stuff
+** Laptop things
+- tlp settings = ~tlpSettings.enable = false~
