@@ -18,6 +18,7 @@
   myMariaDB.enable = true;
   immichphotos.enable = true;
   elephantQL.enable = true;
+  ipBanner.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

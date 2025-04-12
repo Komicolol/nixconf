@@ -7,6 +7,7 @@
     ./docker.nix
     ./firewall.nix
     ./storagething.nix
+    ./fail2ban.nix
   ];
   sshdstuff.enable =
       lib.mkDefault true;
