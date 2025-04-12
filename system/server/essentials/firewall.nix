@@ -7,6 +7,6 @@
   };
   config = {
      # syncthing thing.
-    networking.firewall.allowedTCPPorts = [ 8384 ];
+    networking.firewall.allowedTCPPorts = [ 8384 3000 ];
   };
 }
