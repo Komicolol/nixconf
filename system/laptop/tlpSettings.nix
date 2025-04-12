@@ -26,10 +26,6 @@
         CPU_MAX_PERF_ON_BAT = 30;
         CPU_MIN_PERF_ON_BAT = 0;
 
-        CPU_DRIVER_OPMODE_ON_AC="active";
-        CPU_DRIVER_OPMODE_ON_BAT="active";
-        STOP_CHARGE_THRESH_BAT1 = 80;
-
         USB_AUTOSUSPEND=0;
         USB_BLACKLIST_WWAN=1;
 

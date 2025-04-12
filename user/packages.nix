@@ -35,6 +35,7 @@
       obsidian
       krita
       monero-gui
+      drawio
 
 
       ## still haven't gotten home.nix configured yet but wtvr.
@@ -43,7 +44,7 @@
 
       ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      inputs.zen-browser.packages.${pkgs.system}.default
+      inputs.zen-browser.packages."${system}".default
     ];
 
     programs.firefox.enable = true;

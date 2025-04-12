@@ -26,6 +26,7 @@
       stow
       texliveFull
       clang-tools
+      alejandra
     ];
 
     programs.gnupg.agent = {

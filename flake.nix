@@ -21,9 +21,9 @@
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
        inputs.nixpkgs.follows = "nixpkgs";
-     };
+    };
     zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
+      url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -43,6 +43,10 @@
     sops-nix,
     ...
   }: {
+    # i'll probably copy sioodmy's thingy idk too eepy rn
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
+
+    # wow configs that's crazy
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -67,6 +71,7 @@
       };
     };
 
+    # yuck.
     nixOnDroidConfigurations = {
       default = nix-on-droid.lib.nixOnDroidConfiguration {
         pkgs = import nixpkgs { system = "aarch64-linux"; };

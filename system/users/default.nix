@@ -33,6 +33,9 @@
     };
   };
 
+  # wow!
+  programs.zsh.enable = true;
+
   # either remove this or get ur own secrets file and replace it.
   sops.secrets.rootpasswd = {
     sopsFile = ./secrets.yaml;

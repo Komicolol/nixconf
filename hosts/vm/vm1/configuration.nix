@@ -7,6 +7,10 @@
       ./../../../system
     ];
 
+  # system settings
+  serverKernel.enable = true;
+
+  # server settings
   minecraftTs.enable = true;
   jellything.enable = true;
   sshdstuff.enable = true;

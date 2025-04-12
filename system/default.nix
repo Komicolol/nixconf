@@ -11,6 +11,7 @@
     ./server
     ./secrets
     ./laptop
+    ./linuxKernel
   ];
 
   time.timeZone = "Australia/Perth";
@@ -38,11 +39,6 @@
   # damn you Stallman!!
   nixpkgs.config.allowUnfree = true;
 
-  # TODO: Make a packages.nix file later
-  environment.systemPackages = with pkgs; [
-    sops
-  ];
 
-  # I actually have no idea where to put this...
-  programs.zsh.enable = true;
+
 }
