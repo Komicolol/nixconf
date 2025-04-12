@@ -19,6 +19,7 @@
   immichphotos.enable = true;
   elephantQL.enable = true;
   ipBanner.enable = true;
+  webpkgs.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

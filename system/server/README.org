@@ -20,3 +20,6 @@ Toggleable because i said so :3
 - Immich (photos) - ~immichphotos.enable = false~
 - AI thing - ~aiTypeShii.enable = false~
 - Monero (mining soon tm) - ~moneroYay.enable = false~
+
+**** Website
+- basic stuff - ~webpkgs.enable = false~

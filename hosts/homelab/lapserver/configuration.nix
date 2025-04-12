@@ -26,6 +26,7 @@
   aiTypeShii.enable = true;
   moneroYay.enable = false;
   ipBanner.enable = true;
+  webpkgs.enable = true;
 
 
   # Bootloader.

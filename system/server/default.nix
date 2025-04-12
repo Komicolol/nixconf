@@ -20,6 +20,7 @@
     ./databases
     ./essentials
     ./for-the-funsies
+    ./website
   ];
 
 }

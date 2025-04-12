@@ -12,6 +12,9 @@
   tlpSettings.enable = true;
   zenKernel.enable = true;
 
+  # things
+  webpkgs.enable = true;
+
   # User options
   hyprwm.enable = true;
   xfceDE.enable = true;
