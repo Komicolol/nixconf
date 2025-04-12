@@ -11,6 +11,7 @@
       tmux
       btop
       nh
+      cron
     ];
   };
 }
