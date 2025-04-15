@@ -2,10 +2,10 @@
 
 {
   options = {
-    firewall.enable =
+    server.essentials.firewall.enable =
       lib.mkEnableOption "firewall things for syncthing mostly.";
   };
-  config = {
+  config = lib.mkIf config.server.essentials.firewall.enable {
      # syncthing thing.
     networking.firewall.allowedTCPPorts = [ 8384 3000 ];
   };

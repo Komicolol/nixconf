@@ -1,6 +1,6 @@
 #+title: User Options
 Yeah!
-
+i ain't updating this, go read the other documentation that i (might?) make.
 *** User Options
 - Other Packages - ~regularstuff.enable = false~
 **** WM/DE
@@ -8,11 +8,12 @@ Yeah!
 - Xfce4+i3 - ~xfceDE.enable = false~
 - sddm - ~sddmDM.enable = true~
 **** Devstuff
-- DevStuff - ~devstuff.enable = false~
+- DevStuff - ~devpkgs.enable = false~
 - Kanata - ~kanata.enable = true~
 - VMs - ~vmthings.enable = false~
 **** Gaming
-- Gaming - ~gaming.enable = false~
+- steam - ~steam.enable = false~
+- misc - ~misc.enable = false~
 **** Terminal
 - Terminal Stuff - ~terminal.enable = false~
 **** User Services

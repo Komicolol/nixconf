@@ -2,11 +2,11 @@
 
 {
   options = {
-    kanata.enable =
+    user.devstuff.kanata.enable =
       lib.mkEnableOption "kanata type shit";
   };
 
-  config = lib.mkIf config.kanata.enable {
+  config = lib.mkIf config.user.devstuff.kanata.enable {
     environment.systemPackages = with pkgs; [ kanata ];
     boot.kernelModules = [ "uinput" ];
     hardware.uinput.enable = true;

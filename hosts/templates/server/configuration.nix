@@ -9,17 +9,34 @@
   ];
 
   # Server Options
-  sshdstuff.enable = true;
-  minecraftTs.enable = true;
-  ineedstorage.enable = true;
-  dockerContainer.enable = true;
-  jellything.enable = true;
-  syspkgs.enable = true;
-  myMariaDB.enable = true;
-  immichphotos.enable = true;
-  elephantQL.enable = true;
-  ipBanner.enable = true;
-  webpkgs.enable = true;
+  server = {
+    essentials = {
+      sshdstuff.enable = true;
+      ineedstorage.enable = true;
+      dockerContainer.enable = true;
+      syspkgs.enable = true;
+      firewall.enable = true;
+      ipBanner.enable = true;
+    };
+    databases = {
+      myMariaDB.enable = true;
+      elephantQL.enable = false;
+    };
+
+    for-the-funsies = {
+      jellything.enable = true;
+      minecraftTs.enable = true;
+      immichphotos.enable = true;
+      aiTypeShii.enable = true;
+      moneroYay.enable = false;
+      ILoveBooks.enable = true;
+    };
+
+    webstuff = {
+      webpkgs.enable = true;
+    };
+  };
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

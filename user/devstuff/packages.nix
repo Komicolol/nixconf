@@ -2,11 +2,11 @@
 
 {
   options = {
-    devstuff.enable =
+    user.devstuff.devpkgs.enable =
       lib.mkEnableOption "some dev pkgs";
   };
 
-  config = lib.mkIf config.devstuff.enable {
+  config = lib.mkIf config.user.devstuff.devpkgs.enable {
     environment.systemPackages = with pkgs; [
       aspell
       (aspellWithDicts (dicts: with dicts; [
@@ -27,6 +27,8 @@
       texliveFull
       clang-tools
       alejandra
+      sqlite
+      gcc
     ];
 
     programs.gnupg.agent = {

@@ -1,11 +1,11 @@
 { pkgs, lib, config, ...}: {
 
   options = {
-    hyprwm.enable = 
+    user.wmde.hyprwm.enable =
       lib.mkEnableOption "enables hyprwm";
   };
 
-  config = lib.mkIf config.hyprwm.enable {
+  config = lib.mkIf config.user.wmde.hyprwm.enable {
     programs.hyprland = {
       enable = true; 
       xwayland.enable = true;

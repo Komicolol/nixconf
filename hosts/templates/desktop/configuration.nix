@@ -11,17 +11,28 @@
   # System Settings
   tlpSettings.enable = true;
 
-  # Turn these false if you don't need em.
-  hyprwm.enable = true;
-  xfceDE.enable = true;
-  gaming.enable = true;
-  devstuff.enable = true;
-  regularstuff.enable = true;
-  terminal.enable = true;
-  vmthings.enable = true;
+  user = {
+    regularstuff.enable = true;
+    terminal.enable = true;
+    services.weylusThing.enable = true;
+    wmde = {
+      hyprwm.enable = true;
+      xfceDE.enable = true;
+      sddmDM.enable = true;
+    };
+    gaming = {
+      steam.enable = true;
+      misc.enable = true;
+    };
+    devstuff = {
+      devpkgs.enable = true;
+      vmthing.enable = true;
+      kanata.enable = true;
+    };
+  };
 
   # Need sshd for secrets, disable this if you don't need it lmao
-  sshdstuff.enable = true;
+  server.essentials.sshdstuff.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

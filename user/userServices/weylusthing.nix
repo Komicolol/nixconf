@@ -2,10 +2,10 @@
 
 {
   options = {
-    weylusThing.enable =
+    user.services.weylusThing.enable =
       lib.mkEnableOption "tablet thing";
   };
-  config = lib.mkIf config.weylusThing.enable {
+  config = lib.mkIf config.user.services.weylusThing.enable {
     programs.weylus = {
       enable = true;
       openFirewall = true;

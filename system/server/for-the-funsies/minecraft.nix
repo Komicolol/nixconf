@@ -3,11 +3,11 @@
 
 { pkgs, lib, config, inputs, ... }: {
   options = {
-    minecraftTs.enable =
+    server.for-the-funsies.minecraftTs.enable =
       lib.mkEnableOption "enables minecraft";
   };
 
-  config = lib.mkIf config.minecraftTs.enable {
+  config = lib.mkIf config.server.for-the-funsies.minecraftTs.enable {
     nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
 
     services.minecraft-servers = {

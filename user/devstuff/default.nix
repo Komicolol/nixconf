@@ -5,7 +5,7 @@
     ./kanata.nix
     ./packages.nix
   ];
-  kanata.enable =
+  user.devstuff.kanata.enable =
     lib.mkDefault true;
 
   }

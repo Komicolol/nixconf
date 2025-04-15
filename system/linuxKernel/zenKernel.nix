@@ -2,11 +2,11 @@
 
 {
   options = {
-    zenKernel.enable =
+    system.kernel.zenKernel.enable =
       lib.mkEnableOption "balls";
   };
 
-  config = lib.mkIf config.zenKernel.enable {
+  config = lib.mkIf config.system.kernel.zenKernel.enable {
     boot.kernelPackages = pkgs.linuxPackages_zen;
   };
 }

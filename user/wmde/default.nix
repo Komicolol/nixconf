@@ -5,7 +5,7 @@
     ./xfce.nix
     ./sddm.nix
   ];
-  sddmDM.enable =
+  user.wmde.sddmDM.enable =
     lib.mkDefault true;
   qt = {
     enable = true;

@@ -2,10 +2,10 @@
 
 {
   options = {
-    aiTypeShii.enable =
+    server.for-the-funsies.aiTypeShii.enable =
       lib.mkEnableOption "ollama and other things :3";
   };
-  config = lib.mkIf config.aiTypeShii.enable {
+  config = lib.mkIf config.server.for-the-funsies.aiTypeShii.enable {
     services.ollama = {
       enable = true;
       openFirewall = true;

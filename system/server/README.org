@@ -1,25 +1,26 @@
 #+title: Server Options
 
 Toggleable because i said so :3
-
+- wow it's now all server that's crazy!!
 **** The Essentials
-- sshd - ~sshdstuff.enable = true~
-- random pkgs - ~syspkgs.enable = false~
-- Storage - ~ineedstorage.enable = false~
-- Docker - ~dockerContainer.enable = false~
-- firewall - ~firewall.enable = false~
-- fail2ban - ~ipBanner.enable = false~
+- sshd - ~server.sshdstuff.enable = true~
+- random pkgs - ~server.syspkgs.enable = false~
+- Storage - ~server.ineedstorage.enable = false~
+- Docker - ~server.dockerContainer.enable = false~
+- firewall - ~server.firewall.enable = false~
+- fail2ban - ~server.ipBanner.enable = false~
 
 **** Database Things
-- Postgresql - ~elephantQL.enable = false~
-- MySQL (MariaDB) - ~MyMariaDB = false~
+- Postgresql - ~server.elephantQL.enable = false~
+- MySQL (MariaDB) - ~server.MyMariaDB = false~
 
 **** For the funsies
-- Minecraft - ~minecraftTs.enable = false~
-- Jellyfin - ~jellything.enable = false~
-- Immich (photos) - ~immichphotos.enable = false~
-- AI thing - ~aiTypeShii.enable = false~
-- Monero (mining soon tm) - ~moneroYay.enable = false~
+- Minecraft - ~server.minecraftTs.enable = false~
+- Jellyfin - ~server.jellything.enable = false~
+- Immich (photos) - ~server.immichphotos.enable = false~
+- AI thing - ~server.aiTypeShii.enable = false~
+- Monero (mining soon tm) - ~server.moneroYay.enable = false~
+- books = ~ILoveBooks.enable = false~
 
 **** Website
-- basic stuff - ~webpkgs.enable = false~
+- basic stuff - ~server.webstuff.webpkgs.enable = false~

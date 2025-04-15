@@ -9,6 +9,6 @@
     ./storagething.nix
     ./fail2ban.nix
   ];
-  sshdstuff.enable =
+  server.essentials.sshdstuff.enable =
       lib.mkDefault true;
 }

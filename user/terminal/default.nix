@@ -2,11 +2,11 @@
 
 {
   options = {
-    terminal.enable =
+    user.terminal.enable =
       lib.mkEnableOption "enables terminal";
   };
 
-  config = lib.mkIf config.terminal.enable {
+  config = lib.mkIf config.user.terminal.enable {
     environment.systemPackages = with pkgs; [
       kitty # wezterm might be cool idk
       wezterm # oh wow look at that

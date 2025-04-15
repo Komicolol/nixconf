@@ -10,24 +10,33 @@
       ./hardware-configuration.nix
       ./../../../system
     ];
+  # aaaaaaaaaa
+  server = {
+    essentials = {
+      sshdstuff.enable = true;
+      ineedstorage.enable = true;
+      dockerContainer.enable = true;
+      syspkgs.enable = true;
+      firewall.enable = true;
+      ipBanner.enable = true;
+    };
+    databases = {
+      myMariaDB.enable = true;
+      elephantQL.enable = false;
+    };
 
-  ## Server Options
-  sshdstuff.enable = true;
-  minecraftTs.enable = true;
-  ineedstorage.enable = true;
-  dockerContainer.enable = true;
-  jellything.enable = true;
-  syspkgs.enable = true;
-  myMariaDB.enable = true;
-  firewall.enable = true;
-  # NOT ANYMORE BABYYYY
-  immichphotos.enable = true;
-  # ew.
-  aiTypeShii.enable = true;
-  moneroYay.enable = false;
-  ipBanner.enable = true;
-  webpkgs.enable = true;
-
+    for-the-funsies = {
+      jellything.enable = true;
+      minecraftTs.enable = true;
+      immichphotos.enable = true;
+      aiTypeShii.enable = true;
+      moneroYay.enable = false;
+      ILoveBooks.enable = true;
+    };
+    webstuff = {
+      webpkgs.enable = true;
+    };
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -2,10 +2,10 @@
 
 {
   options = {
-    regularstuff.enable =
+    user.regularstuff.enable =
       lib.mkEnableOption "enables your shit";
   };
-  config = lib.mkIf config.regularstuff.enable {
+  config = lib.mkIf config.user.regularstuff.enable {
     environment.systemPackages = with pkgs; [
       ## Random stuff that *might* be important
       age # more password stuff

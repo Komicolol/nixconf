@@ -2,10 +2,10 @@
 
 {
   options = {
-    tlpSettings.enable =
+    system.laptop.tlpSettings.enable =
       lib.mkEnableOption "laptop things, might change this later";
   };
-  config = lib.mkIf config.tlpSettings.enable {
+  config = lib.mkIf config.system.laptop.tlpSettings.enable {
     services.tlp = {
       enable = true;
       settings = {

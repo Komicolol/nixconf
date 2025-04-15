@@ -17,5 +17,8 @@
 
     # i love miners!
     ./moneroyay.nix
+
+    # books.
+    ./calibre.nix
   ];
 }

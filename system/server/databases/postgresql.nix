@@ -2,11 +2,11 @@
 
 {
   options = {
-    elephantQL.enable =
+    server.databases.elephantQL.enable =
       lib.mkEnableOption "enables postgresql, what did you expect?";
   };
 
-  config = lib.mkIf config.elephantQL.enable {
+  config = lib.mkIf config.server.databases.elephantQL.enable {
     services.postgresql.enable = true;
   };
 }

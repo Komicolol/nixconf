@@ -2,11 +2,11 @@
 
 {
   options = {
-    serverKernel.enable =
+    system.kernel.serverKernel.enable =
       lib.mkEnableOption "baller!!!";
   };
 
-  config = lib.mkIf config.serverKernel.enable {
+  config = lib.mkIf config.system.kernel.serverKernel.enable {
     boot = {
       kernelPackages = pkgs.linuxPackages;
       kernelParams = [

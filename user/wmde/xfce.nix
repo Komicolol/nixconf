@@ -2,11 +2,11 @@
 
 {
   options = {
-    xfceDE.enable =
+    user.wmde.xfceDE.enable =
       lib.mkEnableOption "enables xfce4 and thunar";
   };
 
-  config = lib.mkIf config.xfceDE.enable {
+  config = lib.mkIf config.user.wmde.xfceDE.enable {
     # Only since I havn't done it with hyprland yet...
     programs.thunar.plugins = with pkgs.xfce; [
     thunar-archive-plugin

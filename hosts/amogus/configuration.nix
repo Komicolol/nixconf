@@ -8,27 +8,36 @@
       ./../../user
     ];
 
-  # System Settings
-  tlpSettings.enable = true;
-  zenKernel.enable = true;
-
-  # things
-  webpkgs.enable = true;
-
-  # User options
-  hyprwm.enable = true;
-  xfceDE.enable = true;
-  gaming.enable = true;
-  devstuff.enable = true;
-  regularstuff.enable = true;
-  terminal.enable = true;
-  vmthings.enable = true;
-  weylusThing.enable = true;
-
-  # Server type shit
-  minecraftTs.enable = false;
-  sshdstuff.enable = true;
-  myMariaDB.enable = true;
+  # why the FUCK did i do this. This is the worst mistake that i've done.
+  system = {
+    laptop.tlpSettings.enable = true;
+    kernel.zenKernel.enable = true;
+  };
+  server = {
+    essentials.sshdstuff.enable = true;
+    databases.myMariaDB.enable = true;
+    for-the-funsies.ILoveBooks.enable = false;
+    webstuff.webpkgs.enable = true;
+  };
+  user = {
+    regularstuff.enable = true;
+    terminal.enable = true;
+    services.weylusThing.enable = true;
+    wmde = {
+      hyprwm.enable = true;
+      xfceDE.enable = true;
+      sddmDM.enable = true;
+    };
+    gaming = {
+      steam.enable = true;
+      misc.enable = true;
+    };
+    devstuff = {
+      devpkgs.enable = true;
+      vmthings.enable = true;
+      kanata.enable = true;
+    };
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

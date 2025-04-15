@@ -3,10 +3,10 @@
 {
   # adding sddm here because why not :3
   options = {
-    sddmDM.enable =
+    user.wmde.sddmDM.enable =
       lib.mkEnableOption "sddm thing.";
   };
-  config = lib.mkIf config.sddmDM.enable {
+  config = lib.mkIf config.user.wmde.sddmDM.enable {
     services.xserver.displayManager.sddm = {
       enable = true;
       theme = "catppuccin-mocha";

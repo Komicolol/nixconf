@@ -2,10 +2,9 @@
 
 {
   options = {
-    sshdstuff.enable =
-      lib.mkEnableOption "enables sshd";
+    server.essentials.sshdstuff.enable = lib.mkEnableOption "enables sshd";
   };
-  config = lib.mkIf config.sshdstuff.enable {
+  config = lib.mkIf config.server.essentials.sshdstuff.enable {
     services.openssh = {
       enable = true;
       openFirewall = true;

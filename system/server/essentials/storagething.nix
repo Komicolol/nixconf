@@ -2,11 +2,11 @@
 
 { pkgs, lib, config, ... }: {
   options = {
-    ineedstorage.enable =
+    server.essentials.ineedstorage.enable =
       lib.mkEnableOption "enables storage";
   };
 
-  config = lib.mkIf config.ineedstorage.enable {
+  config = lib.mkIf config.server.essentials.ineedstorage.enable {
 
     # I'm not gonna lie, this look like too much effort LMAO
     # Just use syncthing or smth like idk man..
