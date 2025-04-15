@@ -10,6 +10,7 @@
     services.calibre-web = {
       enable = true;
       openFirewall = true;
+      listen.ip = "0.0.0.0";
       options = {
         reverseProxyAuth.enable = false;
         enableBookConversion = true;
