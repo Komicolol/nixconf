@@ -20,5 +20,9 @@
 
     # books.
     ./calibre.nix
+    ./calibre-server.nix
+
+    # huh..
+    ./mullvad.nix
   ];
 }

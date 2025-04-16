@@ -23,6 +23,7 @@
           "minecraft"
           "mysql"
           "libvirtd"
+          "adbusers"
         ];
         shell = pkgs.zsh;
         openssh.authorizedKeys.keys = [

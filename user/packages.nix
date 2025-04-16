@@ -32,11 +32,14 @@
       zip # very important yes
       nwg-look
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
-      obsidian
-      krita
-      monero-gui
-      drawio
+      obsidian # i needed a .md renderer...
+      krita # drawing but like i never do lol
+      monero-gui # idk I can't even get any monero right now :sob:
+      drawio # diagrams for... something.
+      calibre # books
 
+      # oh wow i wonder what this is all about....
+      qbittorrent
 
       ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme
@@ -48,6 +51,5 @@
     ];
 
     programs.firefox.enable = true;
-
   };
 }

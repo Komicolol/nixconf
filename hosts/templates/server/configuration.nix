@@ -29,7 +29,8 @@
       immichphotos.enable = true;
       aiTypeShii.enable = true;
       moneroYay.enable = false;
-      ILoveBooks.enable = true;
+      webBooks.enable = true;
+      calibre-server.enable = true;
     };
 
     webstuff = {

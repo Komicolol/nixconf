@@ -13,12 +13,14 @@
     laptop.tlpSettings.enable = true;
     kernel.zenKernel.enable = true;
   };
+
   server = {
     essentials.sshdstuff.enable = true;
     databases.myMariaDB.enable = true;
-    for-the-funsies.ILoveBooks.enable = false;
+    for-the-funsies.mullvad.enable = true;
     webstuff.webpkgs.enable = true;
   };
+
   user = {
     regularstuff.enable = true;
     terminal.enable = true;

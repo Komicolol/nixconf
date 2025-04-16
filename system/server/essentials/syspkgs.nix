@@ -13,6 +13,8 @@
       nh
       cron
       yt-dlp # music bc why not.
+      mullvad
+      qbittorrent-cli
     ];
   };
 }
