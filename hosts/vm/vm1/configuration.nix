@@ -1,11 +1,14 @@
-{ config, lib, pkgs, inputs, ... }:
-
 {
-  imports =
-    [
-      ./hardwareconfiguration.nix
-      ./../../../system
-    ];
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    ./hardwareconfiguration.nix
+    ./../../../system
+  ];
 
   # system settings
   serverKernel.enable = true;
@@ -33,7 +36,6 @@
     layout = "au";
     variant = "";
   };
-
 
   environment.systemPackages = with pkgs; [
     vim

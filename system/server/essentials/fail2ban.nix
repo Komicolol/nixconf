@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.essentials.ipBanner.enable =
       lib.mkEnableOption "fail2ban thing :3";

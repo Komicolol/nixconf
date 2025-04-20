@@ -1,6 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
   options = {
     user.regularstuff.enable =
       lib.mkEnableOption "enables your shit";
@@ -30,13 +34,14 @@
       webex # online thingy yay.
       yt-dlp # mp3 bc opus no work with jellyfin
       zip # very important yes
-      nwg-look
+      nwg-look # appearance thing YAYAYAYAYAY
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       obsidian # i needed a .md renderer...
       krita # drawing but like i never do lol
       monero-gui # idk I can't even get any monero right now :sob:
       drawio # diagrams for... something.
       calibre # books
+      openvpn # i don't even use this LMAO
 
       # oh wow i wonder what this is all about....
       qbittorrent

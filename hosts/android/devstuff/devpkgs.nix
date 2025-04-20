@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     devstuff.enable =
       lib.mkEnableOption "some dev pkgs";

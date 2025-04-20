@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   fonts.packages = with pkgs; [
     nerd-fonts.mononoki
     nerd-fonts.symbols-only
@@ -12,5 +15,5 @@
     material-icons
     material-design-icons
     icomoon-feather
-    ];
+  ];
 }

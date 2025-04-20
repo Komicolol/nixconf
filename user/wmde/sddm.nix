@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   # adding sddm here because why not :3
   options = {
     user.wmde.sddmDM.enable =

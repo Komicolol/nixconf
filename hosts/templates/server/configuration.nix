@@ -1,9 +1,11 @@
-{ config, lib, pkgs, ... }:
-
 {
-
-  imports =
-  [ # Include the results of the hardware scan.
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./../../../system
   ];
@@ -38,13 +40,11 @@
     };
   };
 
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "servertemplate"; # Define your hostname.
-
 
   environment.systemPackages = with pkgs; [
     wget

@@ -1,12 +1,15 @@
-{ config, lib, pkgs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./../../../system
-      ./../../../user
-    ];
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./../../../system
+    ./../../../user
+  ];
 
   # System Settings
   tlpSettings.enable = true;
@@ -41,10 +44,10 @@
   networking.hostName = "cheeseburger"; # Define your hostname.
 
   environment.systemPackages = with pkgs; [
-       neovim
-       git
-       wget
-       curl
+    neovim
+    git
+    wget
+    curl
   ];
 
   ## Destop-Specific Configs!

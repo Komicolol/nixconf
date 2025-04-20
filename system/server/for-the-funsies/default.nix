@@ -1,6 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     # probably won't even use it ngl
     ./aiTypeShii.nix
@@ -24,5 +28,8 @@
 
     # huh..
     ./mullvad.nix
+
+    # git thing
+    ./gitea.nix
   ];
 }

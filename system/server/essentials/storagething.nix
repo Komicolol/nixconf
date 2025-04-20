@@ -1,13 +1,16 @@
 # yay, i love like 256gb of extra storage!!!
-
-{ pkgs, lib, config, ... }: {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     server.essentials.ineedstorage.enable =
       lib.mkEnableOption "enables storage";
   };
 
   config = lib.mkIf config.server.essentials.ineedstorage.enable {
-
     # I'm not gonna lie, this look like too much effort LMAO
     # Just use syncthing or smth like idk man..
 

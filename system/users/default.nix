@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   users = {
     # probably change this to true if you wanna set the passwd manually.
     mutableUsers = false;

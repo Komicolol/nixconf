@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   # Yeah :3
   imports = [
     ./devstuff
@@ -15,7 +18,7 @@
 
   nix.extraOptions = ''
     experimental-features = nix-command flakes
- '';
+  '';
 
   environment.etcBackupExtension = ".bak";
 }

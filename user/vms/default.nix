@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     user.devstuff.vmthings.enable =
       lib.mkEnableOption "enables vms to test :3";
@@ -12,7 +15,5 @@
       libvirtd.enable = true;
       spiceUSBRedirection.enable = true;
     };
-
   };
-
 }

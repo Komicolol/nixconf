@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     user.devstuff.devpkgs.enable =
       lib.mkEnableOption "some dev pkgs";
@@ -9,11 +12,12 @@
   config = lib.mkIf config.user.devstuff.devpkgs.enable {
     environment.systemPackages = with pkgs; [
       aspell # spelling for thing
-      (aspellWithDicts (dicts: with dicts; [
-        en
-        en-computers
-        en-science
-      ]))
+      (aspellWithDicts (dicts:
+        with dicts; [
+          en
+          en-computers
+          en-science
+        ]))
       clang # c compiler
       cmake # c maker or smth
       emacs-gtk # doom emacs notes and sometimes coding
@@ -38,5 +42,4 @@
     };
     programs.adb.enable = true;
   };
-
 }

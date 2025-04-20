@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.for-the-funsies.aiTypeShii.enable =
       lib.mkEnableOption "ollama and other things :3";

@@ -1,7 +1,9 @@
-{ config, lib, pkgs, ... }:
-
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     terminal.enable =
       lib.mkEnableOption "enables terminal";

@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.essentials.syspkgs.enable =
       lib.mkEnableOption "syspkgs, might overwrite some user pkgs";

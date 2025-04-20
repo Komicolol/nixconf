@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.databases.myMariaDB.enable =
       lib.mkEnableOption "enables mariadb";

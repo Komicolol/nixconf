@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.databases.elephantQL.enable =
       lib.mkEnableOption "enables postgresql, what did you expect?";

@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.for-the-funsies.webBooks.enable = lib.mkEnableOption "baller";
   };

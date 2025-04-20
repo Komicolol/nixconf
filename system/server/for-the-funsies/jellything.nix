@@ -1,6 +1,10 @@
 # definately legal shows :3
-
-{ pkgs, lib, config, ... }: {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     server.for-the-funsies.jellything.enable =
       lib.mkEnableOption "enables jellying";
@@ -10,7 +14,7 @@
     services.jellyfin = {
       enable = true;
       openFirewall = true;
-      user="komico";
+      user = "komico";
     };
 
     environment.systemPackages = with pkgs; [

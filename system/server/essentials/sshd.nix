@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     server.essentials.sshdstuff.enable = lib.mkEnableOption "enables sshd";
   };

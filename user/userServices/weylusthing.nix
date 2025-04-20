@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     user.services.weylusThing.enable =
       lib.mkEnableOption "tablet thing";
@@ -9,7 +12,7 @@
     programs.weylus = {
       enable = true;
       openFirewall = true;
-      users = [ "komico" ];
+      users = ["komico"];
     };
   };
 }

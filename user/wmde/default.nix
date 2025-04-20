@@ -1,5 +1,9 @@
-{ pkgs, lib, inputs,  ...}: {
-
+{
+  pkgs,
+  lib,
+  inputs,
+  ...
+}: {
   imports = [
     ./hyprwm.nix
     ./xfce.nix
@@ -11,5 +15,4 @@
     enable = true;
     platformTheme = "qt5ct";
   };
-
 }

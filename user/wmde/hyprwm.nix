@@ -1,5 +1,9 @@
-{ pkgs, lib, config, ...}: {
-
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     user.wmde.hyprwm.enable =
       lib.mkEnableOption "enables hyprwm";
@@ -7,7 +11,7 @@
 
   config = lib.mkIf config.user.wmde.hyprwm.enable {
     programs.hyprland = {
-      enable = true; 
+      enable = true;
       xwayland.enable = true;
     };
 
@@ -23,8 +27,8 @@
     ];
 
     xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk];
+      enable = true;
+      extraPortals = [pkgs.xdg-desktop-portal-gtk];
     };
   };
 }

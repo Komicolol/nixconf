@@ -1,6 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     ./net
     ./audio
@@ -34,11 +38,8 @@
   };
 
   # enable flakes you doofus
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # damn you Stallman!!
   nixpkgs.config.allowUnfree = true;
-
-
-
 }

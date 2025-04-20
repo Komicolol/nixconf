@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   imports = [
     ./syspkgs.nix
     ./sshd.nix
@@ -10,5 +13,5 @@
     ./fail2ban.nix
   ];
   server.essentials.sshdstuff.enable =
-      lib.mkDefault true;
+    lib.mkDefault true;
 }

@@ -1,6 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
   # imports = [
   #   ./storagething.nix
   #   ./jellything.nix
@@ -22,5 +26,4 @@
     ./for-the-funsies
     ./website
   ];
-
 }

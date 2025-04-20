@@ -20,13 +20,12 @@
     ## User Inputs
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
-       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
 
     ## Why do i even have this lmao
     # home-manager = {
@@ -49,21 +48,21 @@
     # wow configs that's crazy
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
           ./hosts/amogus/configuration.nix
         ];
       };
       vm1 = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
-        modules =  [
+        modules = [
           ./hosts/vm/vm1/configuration.nix
         ];
       };
       lapserver = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
           ./hosts/homelab/lapserver/configuration.nix
@@ -74,8 +73,8 @@
     # yuck.
     nixOnDroidConfigurations = {
       default = nix-on-droid.lib.nixOnDroidConfiguration {
-        pkgs = import nixpkgs { system = "aarch64-linux"; };
-        extraSpecialArgs = { inherit inputs; };
+        pkgs = import nixpkgs {system = "aarch64-linux";};
+        extraSpecialArgs = {inherit inputs;};
         modules = [
           ./hosts/android/nix-on-droid.nix
         ];

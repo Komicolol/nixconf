@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options = {
     system.kernel.serverKernel.enable =
       lib.mkEnableOption "baller!!!";
