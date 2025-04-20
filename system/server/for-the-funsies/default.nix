@@ -29,7 +29,7 @@
     # huh..
     ./mullvad.nix
 
-    # git thing
-    ./gitea.nix
+    # no gitea :( why tf did i delete it tho LMAOOO
+    # ./gitea.nix
   ];
 }
