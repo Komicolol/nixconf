@@ -24,6 +24,7 @@
       wl-clipboard
       pyprland
       rofi-wayland
+      hyprpicker
     ];
 
     xdg.portal = {

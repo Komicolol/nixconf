@@ -42,6 +42,7 @@
       drawio # diagrams for... something.
       calibre # books
       openvpn # i don't even use this LMAO
+      ffmpeg
 
       # oh wow i wonder what this is all about....
       qbittorrent
@@ -49,6 +50,7 @@
       ## still haven't gotten home.nix configured yet but wtvr.
       dracula-icon-theme
       catppuccin-gtk
+      flat-remix-gtk
 
       ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
