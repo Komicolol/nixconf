@@ -14,6 +14,7 @@
   # why the FUCK did i do this. This is the worst mistake that i've done.
   system = {
     laptop.tlpSettings.enable = true;
+    laptop.upower.enable = true;
     kernel.zenKernel.enable = true;
   };
 
@@ -21,6 +22,7 @@
     essentials.sshdstuff.enable = true;
     databases.myMariaDB.enable = true;
     for-the-funsies.mullvad.enable = true;
+    for-the-funsies.gitea.enable = true;
     webstuff.webpkgs.enable = true;
   };
 

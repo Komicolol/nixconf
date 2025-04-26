@@ -29,7 +29,7 @@
     # huh..
     ./mullvad.nix
 
-    # no gitea :( why tf did i delete it tho LMAOOO
-    # ./gitea.nix
+    # gitea bc why not :3 (may change to forgejo if I get bored enough)
+    ./gitea.nix
   ];
 }

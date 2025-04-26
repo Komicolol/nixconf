@@ -3,6 +3,7 @@ I mean I practically need all of them so....
 
 ** Laptop things
 - tlp settings = ~tlpSettings.enable = false~
+- upower thing = ~upower.enable = false~
 
 ** kernel stuff
 - linux zen = ~zenKernel.enable = false~

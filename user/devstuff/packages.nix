@@ -34,6 +34,7 @@
       sqlite # sql lite
       gcc # gnu c compiler
       busybox # bb (lsusb)
+      fzf # fuzzy finder
     ];
 
     programs.gnupg.agent = {

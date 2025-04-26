@@ -30,9 +30,10 @@
       minecraftTs.enable = true;
       immichphotos.enable = true;
       aiTypeShii.enable = true;
-      moneroYay.enable = false;
+      moneroYay.enable = true;
       webBooks.enable = true;
       calibre-server.enable = true;
+      gitea.enable = true;
     };
 
     webstuff = {

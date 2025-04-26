@@ -6,5 +6,6 @@
 }: {
   imports = [
     ./tlpSettings.nix
+    ./upower.nix
   ];
 }

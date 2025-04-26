@@ -34,7 +34,9 @@
       aiTypeShii.enable = true;
       moneroYay.enable = false;
       webBooks.enable = true;
-      calibre-server.enable = true;
+      calibre-server.enable = false;
+      # disabled until i get my own domain.
+      gitea.enable = false;
     };
     webstuff = {
       webpkgs.enable = true;
@@ -53,5 +55,5 @@
     neovim
   ];
 
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment? no
 }

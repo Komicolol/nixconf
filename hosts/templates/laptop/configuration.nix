@@ -13,19 +13,15 @@
 
   # System Settings
   system.kernel.zenKernel.enable = true;
+  system.laptop.upower.enable = true;
+  system.laptop.tlpSettings.enable = true;
 
+  # more locked-in than desktop config
   user = {
     regularstuff.enable = true;
     terminal.enable = true;
-    services.weylusThing.enable = true;
     wmde = {
-      hyprwm.enable = true;
       xfceDE.enable = true;
-      sddmDM.enable = true;
-    };
-    gaming = {
-      steam.enable = true;
-      misc.enable = true;
     };
     devstuff = {
       devpkgs.enable = true;
@@ -34,14 +30,13 @@
     };
   };
 
-  # Need sshd for secrets, disable this if you don't need it lmao
   server.essentials.sshdstuff.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "cheeseburger"; # Define your hostname.
+  networking.hostName = "baller"; # Define your hostname.
 
   environment.systemPackages = with pkgs; [
     neovim
@@ -50,7 +45,7 @@
     curl
   ];
 
-  ## Destop-Specific Configs!
+  ## Laptop-Specific Configs!
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

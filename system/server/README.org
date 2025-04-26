@@ -21,6 +21,8 @@ Toggleable because i said so :3
 - AI thing - ~server.aiTypeShii.enable = false~
 - Monero (mining soon tm) - ~server.moneroYay.enable = false~
 - books = ~ILoveBooks.enable = false~
+- calibre server = ~calibre-server.enable = false~
+
 
 **** Website
 - basic stuff - ~server.webstuff.webpkgs.enable = false~

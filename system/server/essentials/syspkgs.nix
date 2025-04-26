@@ -13,11 +13,12 @@
     environment.systemPackages = with pkgs; [
       tmux
       btop
-      nh
       cron
       yt-dlp # music bc why not.
       mullvad
       qbittorrent-cli
+      moc # i need my "1 hour of silence occasionally broken by Pikmin" playing
+      alsa-utils
     ];
   };
 }

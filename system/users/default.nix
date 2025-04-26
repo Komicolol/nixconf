@@ -27,6 +27,7 @@
           "mysql"
           "libvirtd"
           "adbusers"
+          "gitea"
         ];
         shell = pkgs.zsh;
         openssh.authorizedKeys.keys = [
@@ -37,7 +38,7 @@
     };
   };
 
-  # wow!
+  # wow! I don't know if i still need this or not anymore...
   programs.zsh.enable = true;
 
   # either remove this or get ur own secrets file and replace it.
