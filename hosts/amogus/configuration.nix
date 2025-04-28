@@ -20,30 +20,29 @@
 
   server = {
     essentials.sshdstuff.enable = true;
-    databases.myMariaDB.enable = true;
-    for-the-funsies.mullvad.enable = true;
-    for-the-funsies.gitea.enable = true;
-    webstuff.webpkgs.enable = true;
+    databases.myMariaDB.enable = false;
+    for-the-funsies.mullvad.enable = false;
+    for-the-funsies.gitea.enable = false;
+    webstuff.webpkgs.enable = false;
   };
 
   user = {
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
-    wmde = {
-      hyprwm.enable = true;
-      xfceDE.enable = true;
-      sddmDM.enable = true;
-    };
-    gaming = {
-      steam.enable = true;
-      misc.enable = true;
-    };
-    devstuff = {
-      devpkgs.enable = true;
-      vmthings.enable = true;
-      kanata.enable = true;
-    };
+    mediaprod.enable = true;
+
+    wmde.hyprwm.enable = true;
+    wmde.xfceDE.enable = true;
+    wmde.sddmDM.enable = true;
+
+    # gang lock in!!!
+    gaming.steam.enable = false;
+    gaming.misc.enable = true;
+
+    devstuff.devpkgs.enable = true;
+    devstuff.vmthings.enable = true;
+    devstuff.kanata.enable = true;
   };
 
   # Bootloader.
@@ -57,7 +56,6 @@
     neovim
     git # git fetch bitches
     wget # do you use this?
-    curl # *random script go!*
   ];
 
   ## Amogus-Specific Configs!

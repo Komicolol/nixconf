@@ -15,5 +15,6 @@
     ./packages.nix
     ./vms
     ./userServices
+    ./mediaprod
   ];
 }

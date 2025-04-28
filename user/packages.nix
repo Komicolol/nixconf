@@ -13,7 +13,6 @@
     environment.systemPackages = with pkgs; [
       ## Random stuff that *might* be important
       age # more password stuff
-      audacity # idk i'm getting bored
       brave # why firefox why
       brightnessctl # let there be light!!!
       coreutils # seems a bit important innit
@@ -22,8 +21,6 @@
       keepassxc # passwords, yay!!
       libreoffice # aaa
       mpv # play thingy idk
-      nh # cool nix
-      obs-studio # recording for no reason
       packwiz # minecraft mods!!!
       samba # why do I have this?
       scrcpy # yeah
@@ -37,12 +34,12 @@
       nwg-look # appearance thing YAYAYAYAYAY
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       obsidian # i needed a .md renderer...
-      krita # drawing but like i never do lol
       monero-gui # idk I can't even get any monero right now :sob:
-      drawio # diagrams for... something.
       calibre # books
       openvpn # i don't even use this LMAO
-      ffmpeg
+      ffmpeg # backend for (insert media editor here lmao)
+      strawberry # yum! (music player)
+      pulsemixer # why not :3
 
       # oh wow i wonder what this is all about....
       qbittorrent
