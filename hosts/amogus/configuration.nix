@@ -63,14 +63,9 @@
     wget # do you use this?
   ];
 
-  ## Amogus-Specific Configs!
+  ## --- Amogus-Specific Configs! ---
   services.printing.enable = true;
   services.xserver.videoDrivers = ["amdgpu"];
-
-  ## black screens hyprland for some odd reason, the davinci resolve dream is dead :(
-  # hardware.graphics.extraPackages = with pkgs; [
-  #   rocmPackages.clr.icd
-  # ];
 
   # From nix wiki, i hope it works :(
   environment.variables={
@@ -88,7 +83,9 @@
      vulkan-validation-layers
      amdvlk  # Optional: AMD's proprietary Vulkan driver
      mesa.opencl  # Enables Rusticl (OpenCL) support
+     rocmPackages.clr.icd # aaa im scared :((
    ];
+ };
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }
