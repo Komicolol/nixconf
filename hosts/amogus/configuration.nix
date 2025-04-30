@@ -20,9 +20,12 @@
 
   server = {
     essentials.sshdstuff.enable = true;
+
     databases.myMariaDB.enable = false;
-    for-the-funsies.mullvad.enable = false;
+
+    for-the-funsies.mullvad.enable = true;
     for-the-funsies.gitea.enable = false;
+
     webstuff.webpkgs.enable = false;
   };
 
@@ -30,14 +33,16 @@
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
-    mediaprod.enable = true;
+
+    mediaprod.drawing.enable = true;
+    mediaprod.music.enable = true;
+    mediaprod.vidEditing.enable = true;
 
     wmde.hyprwm.enable = true;
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
 
-    # gang lock in!!!
-    gaming.steam.enable = false;
+    gaming.steam.enable = true;
     gaming.misc.enable = true;
 
     devstuff.devpkgs.enable = true;
@@ -61,6 +66,29 @@
   ## Amogus-Specific Configs!
   services.printing.enable = true;
   services.xserver.videoDrivers = ["amdgpu"];
+
+  ## black screens hyprland for some odd reason, the davinci resolve dream is dead :(
+  # hardware.graphics.extraPackages = with pkgs; [
+  #   rocmPackages.clr.icd
+  # ];
+
+  # From nix wiki, i hope it works :(
+  environment.variables={
+    RUSTICL_ENABLE="radeonsi";
+    ROC_ENABLE_PRE_VEGA = "1";
+   };
+
+ hardware.graphics = {
+   enable = true;
+   extraPackages = with pkgs; [
+     mesa
+     libva
+     libvdpau-va-gl
+     vulkan-loader
+     vulkan-validation-layers
+     amdvlk  # Optional: AMD's proprietary Vulkan driver
+     mesa.opencl  # Enables Rusticl (OpenCL) support
+   ];
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }
