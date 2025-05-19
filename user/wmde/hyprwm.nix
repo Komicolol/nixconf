@@ -20,11 +20,14 @@
       hyprshot
       hypridle
       hyprlock
-      waybar
-      wl-clipboard
       pyprland
-      rofi-wayland
       hyprpicker
+      # wayland things
+      waybar # bars on bars!!!
+      wl-clipboard # copy and paste
+      rofi-wayland # rofi
+      swww # ?
+      libcava # waybar thing
     ];
 
     xdg.portal = {

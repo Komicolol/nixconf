@@ -5,7 +5,8 @@
   config = lib.mkIf config.user.mediaprod.vidEditing.enable {
     environment.systemPackages = with pkgs; [
       # edit
-      davinci-resolve # just nice to have yknow (my ass is NOT gonna edit shit :skull:)
+      davinci-resolve # only on x11, crashes my entire laptop on wayland and I have to restart it :wiltedrose:
+      # idk some sfx/vfx thing. I don't edit for shit LMAOOO
     ];
   };
 }

@@ -11,5 +11,6 @@
     openutau # teto...
     obs-studio # recording for no reason
     audacity # why is this here???
+    blender # i WONT use this LMAO
   ];
 }

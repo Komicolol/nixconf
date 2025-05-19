@@ -21,6 +21,8 @@
       tmux
       yazi
       cbonsai
+      ttyper # i get bored sometimes...
+      cmatrix
     ];
   };
 }

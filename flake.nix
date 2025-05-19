@@ -36,7 +36,6 @@
     sops-nix,
     ...
   }: {
-    # i'll probably copy sioodmy's thingy idk too eepy rn
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
     # wow configs that's crazy

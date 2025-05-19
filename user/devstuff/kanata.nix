@@ -10,6 +10,7 @@
   };
 
   config = lib.mkIf config.user.devstuff.kanata.enable {
+    # TODO: make this into a service.
     environment.systemPackages = with pkgs; [kanata];
     boot.kernelModules = ["uinput"];
     hardware.uinput.enable = true;

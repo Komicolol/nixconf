@@ -11,7 +11,7 @@
     ./../../user
   ];
 
-  # why the FUCK did i do this. This is the worst mistake that i've done.
+  ## --- settings and presets and shit!!! --- ##
   system = {
     laptop.tlpSettings.enable = true;
     laptop.upower.enable = true;
@@ -42,8 +42,8 @@
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
 
-    gaming.steam.enable = true;
-    gaming.misc.enable = true;
+    gaming.steam.enable = false;
+    gaming.misc.enable = false;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;
@@ -68,6 +68,8 @@
   services.xserver.videoDrivers = ["amdgpu"];
 
   # From nix wiki, i hope it works :(
+  # TODO: put this in either system.drivers.amd or something, ts looks ugly
+  # as hell :wiltedrose:
   environment.variables={
     RUSTICL_ENABLE="radeonsi";
     ROC_ENABLE_PRE_VEGA = "1";
@@ -86,6 +88,9 @@
      rocmPackages.clr.icd # aaa im scared :((
    ];
  };
+
+ hardware.amdgpu.initrd.enable = true; # idk what it does but it looks pretty :3
+ boot.kernelParams = [ "amd-pstate=active" ]; # haha pstate it sounds like something else
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

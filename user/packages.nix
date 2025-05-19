@@ -26,9 +26,8 @@
       scrcpy # yeah
       spotify # music pain :(
       unzip # zip but no
-      vesktop # better discord
+      vesktop # better discord :3
       vlc # it seems important
-      webex # online thingy yay.
       yt-dlp # mp3 bc opus no work with jellyfin
       zip # very important yes
       nwg-look # appearance thing YAYAYAYAYAY
@@ -40,6 +39,10 @@
       ffmpeg # backend for (insert media editor here lmao)
       strawberry # yum! (music player)
       pulsemixer # why not :3
+      nix-tree # i wanna look at nix-store
+      jellyfin-media-player # yes
+      blueman # bluetooth...
+      typst # yay!!!
 
       # oh wow i wonder what this is all about....
       qbittorrent

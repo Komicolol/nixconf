@@ -21,7 +21,7 @@
         server = {
         HTTP_PORT = 3001;
         HTTP_ADDR = "127.0.0.1";
-        DOMAIN = "localhost"; # until I get my own domain, I probably use gitea.
+        DOMAIN = "localhost"; # until I get my own domain, I probably WONT use gitea.
         };
       };
     };
