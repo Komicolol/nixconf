@@ -33,6 +33,7 @@
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
+    services.mpd.enable = true;
 
     mediaprod.drawing.enable = true;
     mediaprod.music.enable = true;
@@ -90,7 +91,11 @@
  };
 
  hardware.amdgpu.initrd.enable = true; # idk what it does but it looks pretty :3
- boot.kernelParams = [ "amd-pstate=active" ]; # haha pstate it sounds like something else
+ boot.kernelParams = [
+   "acpi_backlight=native" # something that's for sure
+   "psmouse.synaptics_intertouch=0" # touchpad things???
+ ];
+ services.fstrim.enable = true; # ssd thing. I should look into it. NAHHH
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

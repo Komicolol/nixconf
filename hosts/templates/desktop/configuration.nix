@@ -18,6 +18,7 @@
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
+    services.mpd.enable = true;
     wmde = {
       hyprwm.enable = true;
       xfceDE.enable = true;

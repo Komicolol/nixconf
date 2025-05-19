@@ -6,5 +6,6 @@
 }: {
   imports = [
     ./weylusthing.nix
+    ./mpd.nix
   ];
 }

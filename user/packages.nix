@@ -43,6 +43,7 @@
       jellyfin-media-player # yes
       blueman # bluetooth...
       typst # yay!!!
+      ncmpcpp
 
       # oh wow i wonder what this is all about....
       qbittorrent
