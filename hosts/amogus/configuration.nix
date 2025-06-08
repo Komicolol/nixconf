@@ -43,8 +43,11 @@
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
 
-    gaming.steam.enable = false;
-    gaming.misc.enable = false;
+    gaming.steam.enable = true;
+    gaming.misc.enable = true;
+
+    # gaming.steam.enable = false;
+    # gaming.misc.enable = false;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;
@@ -57,12 +60,6 @@
   boot.initrd.luks.devices."luks-ca6cc950-61d2-43a5-b97a-025074e83e79".device = "/dev/disk/by-uuid/ca6cc950-61d2-43a5-b97a-025074e83e79";
 
   networking.hostName = "amogus"; # Define your hostname.
-
-  environment.systemPackages = with pkgs; [
-    neovim
-    git # git fetch bitches
-    wget # do you use this?
-  ];
 
   ## --- Amogus-Specific Configs! ---
   services.printing.enable = true;

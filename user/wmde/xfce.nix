@@ -22,7 +22,10 @@
     };
 
     # xfce + i3 bc why not
-    environment.systemPackages = with pkgs; [picom-next];
+    environment.systemPackages = with pkgs; [
+      picom-next
+      i3blocks
+    ];
 
     services.xserver = {
       enable = true;

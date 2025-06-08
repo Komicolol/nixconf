@@ -39,7 +39,7 @@
   };
 
   # wow! I don't know if i still need this or not anymore...
-  programs.zsh.enable = true;
+  programs.zsh.enable = true; # config in user/terminal ...
 
   # either remove this or get ur own secrets file and replace it.
   sops.secrets.rootpasswd = {

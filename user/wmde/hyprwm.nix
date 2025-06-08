@@ -28,7 +28,11 @@
       rofi-wayland # rofi
       swww # ?
       libcava # waybar thing
+      waypaper # why tf have i been rawdogging wallpapers when this exists???
+      hyprlang
     ];
+
+    environment.sessionVariables.NIXOS_OZONE_WL = "1"; # i feel like i've done this before..
 
     xdg.portal = {
       enable = true;

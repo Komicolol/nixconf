@@ -35,7 +35,9 @@
       gcc # gnu c compiler
       busybox # bb (lsusb)
       fzf # fuzzy finder
-
+      tree-sitter-grammars.tree-sitter-typst # typst, because why not :3
+      libtree # tree lib
+      pandoc # org to pdf, md, mdx, wtvr
     ];
 
     programs.gnupg.agent = {

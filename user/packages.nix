@@ -43,7 +43,10 @@
       jellyfin-media-player # yes
       blueman # bluetooth...
       typst # yay!!!
-      ncmpcpp
+      ncmpcpp # i can't be bothered learning pms
+      mpc # waybar things...
+      anki-bin # honestly, i should make a folder for everythingi need for school...
+      libnotify # pomodoro thing...
 
       # oh wow i wonder what this is all about....
       qbittorrent
@@ -56,6 +59,7 @@
       ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
       inputs.zen-browser.packages."${system}".default
+
     ];
 
     programs.firefox.enable = true;

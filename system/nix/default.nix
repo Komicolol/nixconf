@@ -10,4 +10,11 @@
 
   # damn you Stallman!!
   nixpkgs.config.allowUnfree = true;
+
+  # some editing if everything goes to shit..
+  environment.systemPackages = with pkgs; [
+    neovim
+    git # git fetch bitches
+    wget # do you use this?
+  ];
 }

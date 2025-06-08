@@ -23,6 +23,15 @@
       cbonsai
       ttyper # i get bored sometimes...
       cmatrix
+      bottom # :33333333
     ];
+
+    programs.zsh = {
+      enable = lib.mkDefault true;
+
+      # just adding autosuggestions..
+      autosuggestions.enable = true;
+      autosuggestions.async = true;
+    };
   };
 }
