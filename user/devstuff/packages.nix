@@ -38,6 +38,7 @@
       tree-sitter-grammars.tree-sitter-typst # typst, because why not :3
       libtree # tree lib
       pandoc # org to pdf, md, mdx, wtvr
+      acpi # something, that's for sure! (using it to look at bat. percentage rn)
     ];
 
     programs.gnupg.agent = {

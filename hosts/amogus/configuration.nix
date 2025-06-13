@@ -18,16 +18,8 @@
     kernel.zenKernel.enable = true;
   };
 
-  server = {
-    essentials.sshdstuff.enable = true;
-
-    databases.myMariaDB.enable = false;
-
-    for-the-funsies.mullvad.enable = true;
-    for-the-funsies.gitea.enable = false;
-
-    webstuff.webpkgs.enable = false;
-  };
+  ## --- Change this to system essentials --- ##
+  server.essentials.sshdstuff.enable = true;
 
   user = {
     regularstuff.enable = true;
@@ -35,23 +27,21 @@
     services.weylusThing.enable = true;
     services.mpd.enable = true;
 
-    mediaprod.drawing.enable = true;
-    mediaprod.music.enable = true;
-    mediaprod.vidEditing.enable = true;
-
     wmde.hyprwm.enable = true;
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
 
-    gaming.steam.enable = true;
-    gaming.misc.enable = true;
-
-    # gaming.steam.enable = false;
-    # gaming.misc.enable = false;
-
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;
     devstuff.kanata.enable = true;
+
+    ## --- fun stuff, disabled when i need to lock in :( --- ##
+    gaming.steam.enable = false;
+    gaming.misc.enable = false;
+
+    mediaprod.drawing.enable = false;
+    mediaprod.music.enable = false;
+    mediaprod.vidEditing.enable = false;
   };
 
   # Bootloader.
