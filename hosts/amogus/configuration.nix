@@ -20,6 +20,7 @@
 
   ## --- Change this to system essentials --- ##
   server.essentials.sshdstuff.enable = true;
+  server.for-the-funsies.mullvad.enable = true;
 
   user = {
     regularstuff.enable = true;
@@ -36,8 +37,8 @@
     devstuff.kanata.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = false;
-    gaming.misc.enable = false;
+    gaming.steam.enable = true;
+    gaming.misc.enable = true;
 
     mediaprod.drawing.enable = false;
     mediaprod.music.enable = false;

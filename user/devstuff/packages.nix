@@ -39,6 +39,7 @@
       libtree # tree lib
       pandoc # org to pdf, md, mdx, wtvr
       acpi # something, that's for sure! (using it to look at bat. percentage rn)
+      man-pages # learning c right now, and it seems pretty useful no???
     ];
 
     programs.gnupg.agent = {
