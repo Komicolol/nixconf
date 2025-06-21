@@ -41,16 +41,10 @@
     };
   };
 
-  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "servertemplate"; # Define your hostname.
 
-  environment.systemPackages = with pkgs; [
-    wget
-    git
-    neovim
-  ];
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

@@ -20,32 +20,21 @@
   user = {
     regularstuff.enable = true;
     terminal.enable = true;
-    wmde = {
-      xfceDE.enable = true;
-    };
-    devstuff = {
-      devpkgs.enable = true;
-      vmthing.enable = true;
-      kanata.enable = true;
-    };
-  };
 
-  server.essentials.sshdstuff.enable = true;
+    wmde.xfceDE.enable = true;
+    wmde.sddmDM.enable = true;
+
+    devstuff.devpkgs.enable = true;
+    devstuff.vmthings.enable = true;
+    devstuff.kanata.enable = true;
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "baller"; # Define your hostname.
-
-  environment.systemPackages = with pkgs; [
-    neovim
-    git
-    wget
-    curl
-  ];
-
   ## Laptop-Specific Configs!
+  networking.hostName = "baller"; # Define your hostname.
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }
