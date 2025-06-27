@@ -31,6 +31,7 @@
     wmde.hyprwm.enable = true;
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
+    wmde.niri.enable = true;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;

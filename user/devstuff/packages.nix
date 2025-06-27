@@ -27,7 +27,7 @@
       lua-language-server # I love lua <3
       python3 # ew python...
       ripgrep # the better grep
-      stow # for the dotfiles that I haven't set up yet...
+      stow # for the dotfiles that I HAVE set up!
       texliveFull # math, ew
       clang-tools # c comp. tools
       alejandra # nix formatter that I haven't set up LMAO
@@ -40,6 +40,7 @@
       pandoc # org to pdf, md, mdx, wtvr
       acpi # something, that's for sure! (using it to look at bat. percentage rn)
       man-pages # learning c right now, and it seems pretty useful no???
+      typst # yay!!!
     ];
 
     programs.gnupg.agent = {

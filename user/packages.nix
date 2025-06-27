@@ -35,14 +35,12 @@
       obsidian # i needed a .md renderer...
       monero-gui # idk I can't even get any monero right now :sob:
       calibre # books
-      openvpn # i don't even use this LMAO
       ffmpeg # backend for (insert media editor here lmao)
       strawberry # yum! (music player)
       pulsemixer # why not :3
       nix-tree # i wanna look at nix-store
       jellyfin-media-player # yes
       blueman # bluetooth...
-      typst # yay!!!
       ncmpcpp # i can't be bothered learning pms
       mpc # waybar things...
       anki-bin # honestly, i should make a folder for everythingi need for school...
