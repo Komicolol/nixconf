@@ -17,5 +17,10 @@
     systemd.services.mpd.environment = {
       XDG_RUNTIME_DIR = "/run/user/1000";
     };
+    environment.systemPackages = with pkgs; [
+      rmpc # AAAAAAAAA
+      ncmpcpp
+      mpc # raw-dogging mpd
+    ];
   };
 }

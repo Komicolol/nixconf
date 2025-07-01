@@ -13,7 +13,6 @@
     environment.systemPackages = with pkgs; [
       ## Random stuff that *might* be important
       age # more password stuff
-      brave # why firefox why
       brightnessctl # let there be light!!!
       coreutils # seems a bit important innit
       feh # backgrounds
@@ -39,10 +38,7 @@
       strawberry # yum! (music player)
       pulsemixer # why not :3
       nix-tree # i wanna look at nix-store
-      jellyfin-media-player # yes
       blueman # bluetooth...
-      ncmpcpp # i can't be bothered learning pms
-      mpc # waybar things...
       anki-bin # honestly, i should make a folder for everythingi need for school...
       libnotify # pomodoro thing...
       playerctl # beeps and boops make me happy
@@ -55,11 +51,12 @@
       dracula-icon-theme
       catppuccin-gtk
       flat-remix-gtk
-
-      ## inputs thingy :3
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      inputs.zen-browser.packages."${system}".default
 
+      # brower things
+      brave # why firefox why
+      qutebrowser # ty bread on penguin for introducting me to this <333
+      inputs.zen-browser.packages."${system}".default
     ];
 
     programs.firefox.enable = true;

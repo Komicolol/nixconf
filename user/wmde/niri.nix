@@ -10,6 +10,12 @@
       extraPortals = [pkgs.xdg-desktop-portal-gtk];
     };
 
+    environment.systemPackages = with pkgs; [
+      swaylock
+      swaybg
+      xwayland-satellite
+    ];
+
     services.gnome.gnome-keyring.enable = true;
   };
 }
