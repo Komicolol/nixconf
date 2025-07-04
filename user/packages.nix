@@ -13,36 +13,36 @@
     environment.systemPackages = with pkgs; [
       ## Random stuff that *might* be important
       age # more password stuff
+      anki-bin # honestly, i should make a folder for everythingi need for school...
+      blueman # bluetooth...
       brightnessctl # let there be light!!!
+      calibre # books
       coreutils # seems a bit important innit
       feh # backgrounds
+      ffmpeg # backend for (insert media editor here lmao)
       gvfs # for server file thing yeah
       keepassxc # passwords, yay!!
+      libnotify # pomodoro thing...
       libreoffice # aaa
+      monero-gui # idk I can't even get any monero right now :sob:
+      mpd-mpris # stupid aaaaa
       mpv # play thingy idk
+      nix-tree # i wanna look at nix-store
+      nwg-look # appearance thing YAYAYAYAYAY
+      obsidian # i needed a .md renderer...
       packwiz # minecraft mods!!!
+      playerctl # beeps and boops make me happy
+      pulsemixer # why not :3
       samba # why do I have this?
       scrcpy # yeah
       spotify # music pain :(
+      strawberry # yum! (music player)
       unzip # zip but no
       vesktop # better discord :3
       vlc # it seems important
       yt-dlp # mp3 bc opus no work with jellyfin
-      zip # very important yes
-      nwg-look # appearance thing YAYAYAYAYAY
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
-      obsidian # i needed a .md renderer...
-      monero-gui # idk I can't even get any monero right now :sob:
-      calibre # books
-      ffmpeg # backend for (insert media editor here lmao)
-      strawberry # yum! (music player)
-      pulsemixer # why not :3
-      nix-tree # i wanna look at nix-store
-      blueman # bluetooth...
-      anki-bin # honestly, i should make a folder for everythingi need for school...
-      libnotify # pomodoro thing...
-      playerctl # beeps and boops make me happy
-      mpd-mpris # stupid aaaaa
+      zip # very important yes
 
       # oh wow i wonder what this is all about....
       qbittorrent
@@ -56,9 +56,10 @@
       # brower things
       brave # why firefox why
       qutebrowser # ty bread on penguin for introducting me to this <333
-      inputs.zen-browser.packages."${system}".default
+      inputs.zen-browser.packages."${system}".default # firefox, might not even use anymore...
     ];
 
-    programs.firefox.enable = true;
+    # :(
+    programs.firefox.enable = false;
   };
 }

@@ -31,15 +31,17 @@
     wmde.hyprwm.enable = true;
     wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
-    wmde.niri.enable = true;
+    # will replace i3 when it gets better w/ xwayland stuff, emacs just kinda
+    # doesn't work that well :(
+    wmde.niri.enable = false;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;
     devstuff.kanata.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = false;
-    gaming.misc.enable = false;
+    gaming.steam.enable = true;
+    gaming.misc.enable = true;
 
     mediaprod.drawing.enable = false;
     mediaprod.music.enable = false;
