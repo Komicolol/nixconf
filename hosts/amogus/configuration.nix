@@ -22,18 +22,23 @@
   server.essentials.sshdstuff.enable = true;
   server.for-the-funsies.mullvad.enable = true;
 
+  ## -- Server Testing... -- ##
+  server.for-the-funsies.minecraftTs = true; # testing..
+
   user = {
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
     services.mpd.enable = true;
 
-    wmde.hyprwm.enable = true;
-    wmde.xfceDE.enable = true;
     wmde.sddmDM.enable = true;
-    # will replace i3 when it gets better w/ xwayland stuff, emacs just kinda
-    # doesn't work that well :(
-    wmde.niri.enable = false;
+    # gaming/light productivity
+    wmde.hyprwm.enable = true;
+    # school work/heavy productivity
+    wmde.xfceDE.enable = true;
+    # in the middle, might replace xfce+i3
+    # nevermind, i'm just dum. (i put in ~DISPLAY: ":1"~ instead of ~DISPLAY ":1"~...)
+    wmde.niri.enable = true;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;

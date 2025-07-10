@@ -13,6 +13,7 @@
     environment.systemPackages = with pkgs; [
       swaylock
       swaybg
+      swayidle
       xwayland-satellite
     ];
 

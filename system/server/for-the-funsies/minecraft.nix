@@ -23,7 +23,7 @@
       servers = {
         survivalVanServer = {
           enable = true;
-          package = pkgs.fabricServers.fabric-1_21_4.override {loaderVersion = "0.16.10";};
+          package = pkgs.fabricServers.fabric-1_21_7.override {loaderVersion = "0.16.14";};
 
           serverProperties = {
             gamemode = "survival";

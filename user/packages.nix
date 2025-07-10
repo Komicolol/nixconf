@@ -43,6 +43,9 @@
       yt-dlp # mp3 bc opus no work with jellyfin
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       zip # very important yes
+      styluslabs-write # I DIDN'T BUY THE TABLET JUST FOR OSU I SWEAR
+      pdftowrite # for Write.
+      dysk # better df
 
       # oh wow i wonder what this is all about....
       qbittorrent
