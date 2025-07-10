@@ -11,7 +11,7 @@
   config = lib.mkIf config.server.essentials.sshdstuff.enable {
     services.openssh = {
       enable = true;
-      Ports = [ 5124 ];
+      ports = [ 5124 ]; # me when i follow an old ass wiki page:
       openFirewall = true;
       settings = {
         PasswordAuthentication = false;

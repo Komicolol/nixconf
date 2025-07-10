@@ -29,7 +29,7 @@
 
     for-the-funsies = {
       jellything.enable = true;
-      minecraftTs.enable = true;
+      mcVanServ.enable = true;
       immichphotos.enable = true;
       aiTypeShii.enable = true;
       moneroYay.enable = false;

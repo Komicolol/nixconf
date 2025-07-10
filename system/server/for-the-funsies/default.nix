@@ -13,8 +13,7 @@
     ./photosimmichyeah.nix
 
     # not for this one, i love mc <333
-    ./minecraft.nix
-    inputs.nix-minecraft.nixosModules.minecraft-servers
+    ./minecraft
 
     # this, not so much.
     ./jellything.nix

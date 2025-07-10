@@ -8,11 +8,11 @@
   ...
 }: {
   options = {
-    server.for-the-funsies.minecraftTs.enable =
+    server.for-the-funsies.mcVanServ.enable =
       lib.mkEnableOption "enables minecraft";
   };
 
-  config = lib.mkIf config.server.for-the-funsies.minecraftTs.enable {
+  config = lib.mkIf config.server.for-the-funsies.mcVanServ.enable {
     nixpkgs.overlays = [inputs.nix-minecraft.overlay];
 
     services.minecraft-servers = {
@@ -36,8 +36,8 @@
 
           symlinks = let
             modpack = pkgs.fetchPackwizModpack {
-              url = "https://github.com/Komicolol/Modpacks/raw/refs/heads/main/pack.toml";
-              packHash = "sha256-kizNGJc4wwTu/HTs4VLyWhxSFDSlD1LtfruZeSdioyE=";
+              url = "https://raw.githubusercontent.com/Komicolol/Modpacks/refs/heads/main/survival-thingy/pack.toml";
+              packHash = "sha256-54WypIsOWjZjJprCuJcOMG/+Ygn2lTjaC/eTaZHrVO8=";
             };
           in {
             "mods" = "${modpack}/mods";
