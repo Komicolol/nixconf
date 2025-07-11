@@ -37,7 +37,7 @@
           symlinks = let
             modpack = pkgs.fetchPackwizModpack {
               url = "https://raw.githubusercontent.com/Komicolol/Modpacks/refs/heads/main/survival-thingy/pack.toml";
-              packHash = "sha256-54WypIsOWjZjJprCuJcOMG/+Ygn2lTjaC/eTaZHrVO8=";
+              packHash = "sha256-q+GBXgzmFZPBb9LEdJPuUAl6pzL3OdIreIi6TniNyP8=";
             };
           in {
             "mods" = "${modpack}/mods";

@@ -34,7 +34,7 @@
       calibre-server.enable = true;
       gitea.enable = true;
     };
-
+  };
   boot.loader.grub = {
     enable = true;
     device = "/dev/vda";

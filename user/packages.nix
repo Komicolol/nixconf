@@ -16,7 +16,6 @@
       anki-bin # honestly, i should make a folder for everythingi need for school...
       blueman # bluetooth...
       brightnessctl # let there be light!!!
-      calibre # books
       coreutils # seems a bit important innit
       feh # backgrounds
       ffmpeg # backend for (insert media editor here lmao)
