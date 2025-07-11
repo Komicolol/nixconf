@@ -27,7 +27,7 @@
         server = {
           SSH_PORT = 22;
           HTTP_PORT = 3001;
-          HTTP_ADDR = "127.0.0.1";
+          HTTP_ADDR = "192.168.1.122"; # i don't care anymore.
           ROOT_URL = "https://git.komico.dev/";
         # DOMAIN = "komico.dev"; # I got my own domain :3
         };
