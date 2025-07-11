@@ -31,7 +31,6 @@
           HTTP_PORT = 3001;
           HTTP_ADDR = "0.0.0.0"; # i don't care anymore.
           ROOT_URL = "https://git.komico.dev/";
-          START_SSH_SERVER = true; # I DON'T FUCKING KNOW MAN
         # DOMAIN = "komico.dev"; # I got my own domain :3
         };
       };
