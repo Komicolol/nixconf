@@ -23,7 +23,7 @@
   server.for-the-funsies.mullvad.enable = true;
 
   ## -- Server Testing... -- ##
-  server.for-the-funsies.mcVanServ.enable = false; # testing..
+  server.for-the-funsies.forgejo.enable = false; # testing..
 
   user = {
     regularstuff.enable = true;

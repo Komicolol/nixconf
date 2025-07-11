@@ -28,7 +28,7 @@
     # huh..
     ./mullvad.nix
 
-    # gitea bc why not :3 (may change to forgejo if I get bored enough)
-    ./gitea.nix
+    # gitea bc why not :3 (may change to forgejo if I get bored enough) (i got bored enough.)
+    ./forgejo.nix
   ];
 }

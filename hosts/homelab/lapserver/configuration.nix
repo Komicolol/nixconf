@@ -1,6 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
 {
   config,
   pkgs,
@@ -29,14 +26,14 @@
 
     for-the-funsies = {
       jellything.enable = true;
-      mcVanServ.enable = true;
+      # so this just doesn't want to work :(
+      mcVanServ.enable = false;
       immichphotos.enable = true;
       aiTypeShii.enable = true;
       moneroYay.enable = false;
       webBooks.enable = true;
       calibre-server.enable = false;
-      # disabled until i get my own domain.
-      gitea.enable = false;
+      forgejo.enable = true;
     };
     webstuff = {
       webpkgs.enable = true;
