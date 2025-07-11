@@ -20,6 +20,7 @@
         session.COOKIE_SECURE = true;
         actions.ENABLED = true;
         metrics.ENABLED = true;
+        service.DISABLE_REGISTRATION = true;
         repository = {
           DEFAULT_PUSH_CREATE_PRIVATE = true;
           DEFAULT_BRANCH = "main";
@@ -27,7 +28,7 @@
         server = {
           SSH_PORT = 22;
           HTTP_PORT = 3001;
-          HTTP_ADDR = "192.168.1.122"; # i don't care anymore.
+          HTTP_ADDR = "0.0.0.0"; # i don't care anymore.
           ROOT_URL = "https://git.komico.dev/";
         # DOMAIN = "komico.dev"; # I got my own domain :3
         };
