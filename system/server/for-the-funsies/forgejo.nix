@@ -26,7 +26,7 @@
           DEFAULT_BRANCH = "main";
         };
         server = {
-          SSH_PORT = 22;
+          SSH_PORT = 5124;
           HTTP_PORT = 3001;
           HTTP_ADDR = "0.0.0.0"; # i don't care anymore.
           ROOT_URL = "https://git.komico.dev/";
