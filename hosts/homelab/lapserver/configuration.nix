@@ -27,7 +27,7 @@
     for-the-funsies = {
       jellything.enable = true;
       # so this just doesn't want to work :(
-      mcVanServ.enable = false;
+      mcVanServ.enable = true;
       immichphotos.enable = true;
       aiTypeShii.enable = false; # yuck.
       moneroYay.enable = false;

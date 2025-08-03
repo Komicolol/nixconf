@@ -1,6 +1,7 @@
 #+title: Minecraft!!!!
 
-I'm currently running 3 servers, all behind a proxy (velocity).
+I'm going to be running 3 servers, all behind a proxy (velocity).
+not now tho it's too hard :<
 
 * Lobby (?)
 I say this is a lobby, but it's probably gonna be a regular vanilla survival

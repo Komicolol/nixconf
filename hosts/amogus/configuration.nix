@@ -24,7 +24,6 @@
 
   ## -- Server Testing... -- ##
   # AAAAAAAAAAA
-  server.for-the-funsies.mcProxy.enable = false;
   server.for-the-funsies.mcVanServ.enable = false;
 
   user = {
