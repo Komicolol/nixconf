@@ -20,7 +20,8 @@
         ]))
       clang # c compiler
       cmake # c maker or smth
-      emacs-gtk # doom emacs notes and sometimes coding
+      emacs-pgtk # doom emacs notes and sometimes coding
+      emacsPackages.sqlite3 # ARE YOU FUCKING KIDDING ME LMAOO
       fd # fd
       gnumake # gnu maker
       libtool # tool

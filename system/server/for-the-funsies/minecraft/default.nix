@@ -6,5 +6,7 @@
     ./survivalServer.nix
     ## I just don't want to right now.
     # ./mcProxy.nix
+    # ./lobby.nix
+    # ./cobblemon.nix # no.
   ];
 }

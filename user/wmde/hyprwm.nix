@@ -28,7 +28,6 @@
       rofi-wayland # rofi
       swww # ?
       libcava # waybar thing
-      waypaper # why tf have i been rawdogging wallpapers when this exists???
       hyprlang
     ];
 

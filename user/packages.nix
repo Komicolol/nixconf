@@ -42,9 +42,16 @@
       yt-dlp # mp3 bc opus no work with jellyfin
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       zip # very important yes
-      styluslabs-write # I DIDN'T BUY THE TABLET JUST FOR OSU I SWEAR
+      styluslabs-write # I DIDN'T BUY THE TABLET JUST FOR OSU I SWEAR (nvm this is postponed, i got smth else..)
       pdftowrite # for Write.
       dysk # better df
+      vial # pre build ergo mech kbd :3
+      waypaper # why tf have i been rawdogging wallpapers when this exists???
+      wlsunset # eye hurts :(((
+      jamesdsp # audio...
+      jq # used for script: https://github.com/YaLTeR/niri/discussions/724#discussioncomment-13228472
+      drawio # diagrams galore!!1
+      davfs2 # webdav, for testing out copyparty lmao
 
       # oh wow i wonder what this is all about....
       qbittorrent

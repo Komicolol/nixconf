@@ -11,7 +11,7 @@
     };
 
     environment.systemPackages = with pkgs; [
-      swaylock
+      swaylock-effects
       swaybg
       swayidle
       xwayland-satellite

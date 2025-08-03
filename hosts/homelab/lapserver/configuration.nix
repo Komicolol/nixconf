@@ -29,7 +29,7 @@
       # so this just doesn't want to work :(
       mcVanServ.enable = false;
       immichphotos.enable = true;
-      aiTypeShii.enable = true;
+      aiTypeShii.enable = false; # yuck.
       moneroYay.enable = false;
       webBooks.enable = true;
       calibre-server.enable = false;

@@ -27,7 +27,7 @@
           "mysql"
           "libvirtd"
           "adbusers"
-          "gitea"
+          "forgejo"
         ];
         shell = pkgs.zsh;
         openssh.authorizedKeys.keys = [

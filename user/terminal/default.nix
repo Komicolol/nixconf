@@ -24,6 +24,8 @@
       ttyper # i get bored sometimes...
       cmatrix
       bottom # :33333333
+      tealdeer
+      bat
     ];
 
     programs.zsh = {

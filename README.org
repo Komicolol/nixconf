@@ -3,27 +3,27 @@
 
 A Nix configuration of all time, and i hope it won't spiral out of control /too/ quickly. hopefully.
 
-** Information
+* Information
 this is bc i know i'll forget what some options are and it might get too complicated for me
 
-*** hosts
+** hosts
 - amogus = my thinkpad t14 1st gen laptop
 - android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
 - lapserver1 = old ass laptop that i'll use as a server because i'm bored
 - vm1 = a vm just to test server configs
 
-*** Options
+** Options
 me realising that it's better to have it in different files:
 - [[./system/README.org][System Options]]
 - [[./user/README.org][User Options]]
 - [[./system/server/README.org][System Options]]
 
-** If you want to use my config..
+* If you want to use my config..
 Don't. I'm just joking, go copy a template of mine and insert your hardware config file. Look into the options above just to see what you can use.
-*** CHANGE THIS FILE SPECIFICALLY BTWWWW
+** CHANGE THIS FILE SPECIFICALLY BTWWWW
 - [[./system/users/default.nix][User Configuration]] - *CHANGE PUB SSH KEY AND MAYBE REMOVE PASSWORD FILES IDKKK*
 
-*** Templates
+** Templates
 - [[./hosts/templates/desktop/configuration.nix][Desktop Template]]
 - [[./hosts/templates/server/configuration.nix][Server Template]]
 
@@ -31,14 +31,14 @@ Just a heads up, this is a personal config of mine and is made just for me. So s
 
 /oh why even make this section then/ I don't wanna do school work, so I needed to do something to procrastinate ok :sob:
 
-** Why NixOS?
+* Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...
-*** Some helpful resources
+** Some helpful resources
 Just in case I forget something:
 - [[https://nixos-and-flakes.thiscute.world/][NixOS & Flakes Book]] - very helpful
 - [[https://nixos.org/manual/nixos/stable/][NixOS Manual]] & [[https://nixos.wiki/][NixOS Wiki]] - Also very helpful
 - [[https://mynixos.com/][MyNixOS]] - search thingy
-*** tysm
+** tysm
 People that helped with my experience (dotfiles, videos, etc.):
 - [[https://www.youtube.com/c/NoBoilerplate][No Boilerplate]] - The person who got me into this mess in the first place
 - [[https://github.com/sioodmy/dotfiles][sioodmy's dotfiles]] - The NixOS config that I was unfortunately first inspired by (nice config tho)
