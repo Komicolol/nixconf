@@ -32,7 +32,7 @@
     for-the-funsies = {
       jellything.enable = true;
       mcVanServ.enable = true;
-      immichphotos.enable = true;
+      immichphotos.enable = false; # renable next update, hash mismatch happened :(
       aiTypeShii.enable = false; # yuck.
       moneroYay.enable = false;
       webBooks.enable = true;
