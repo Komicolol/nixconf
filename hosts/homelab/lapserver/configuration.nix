@@ -11,8 +11,13 @@
   ];
   # aaaaaaaaaa
   server = {
+    cloudflare-proxy.enable = true;
+    cloudflare-np.enable = true;
+    storage.copyparty.enable = true;
+
     essentials = {
       sshdstuff.enable = true;
+      # about to be removed.
       ineedstorage.enable = true;
       dockerContainer.enable = true;
       syspkgs.enable = true;
@@ -26,7 +31,6 @@
 
     for-the-funsies = {
       jellything.enable = true;
-      # so this just doesn't want to work :(
       mcVanServ.enable = true;
       immichphotos.enable = true;
       aiTypeShii.enable = false; # yuck.
@@ -35,9 +39,7 @@
       calibre-server.enable = false;
       forgejo.enable = true;
     };
-    webstuff = {
-      webpkgs.enable = true;
-    };
+    webstuff.webpkgs.enable = true;
   };
 
   # Bootloader.
