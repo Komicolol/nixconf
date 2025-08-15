@@ -15,6 +15,9 @@
       swaybg
       swayidle
       xwayland-satellite
+      # screenshot things
+      # flameshot
+      # grim
     ];
 
     services.gnome.gnome-keyring.enable = true;

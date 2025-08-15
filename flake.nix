@@ -16,6 +16,7 @@
 
     ## Server Inputs
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+    copyparty.url = "github:9001/copyparty";
 
     ## User Inputs
     rose-pine-hyprcursor = {

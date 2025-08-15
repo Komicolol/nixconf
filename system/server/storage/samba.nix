@@ -25,6 +25,11 @@
         comment = "balls.";
       };
     };
+
+    # to see it everywhere!
+    services.samba-wsdd.enable = true;
+    services.samba-wsdd.openFirewall = true;
+
     # why am i adding this to storage? I have no idea.
     services.logind.lidSwitch = "ignore";
   };

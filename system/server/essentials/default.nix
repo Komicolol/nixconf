@@ -9,7 +9,6 @@
     ./sshd.nix
     ./docker.nix
     ./firewall.nix
-    ./storagething.nix
     ./fail2ban.nix
   ];
   server.essentials.sshdstuff.enable =
