@@ -24,7 +24,9 @@
 
   ## -- Server Testing... -- ##
   # AAAAAAAAAAA
-  server.for-the-funsies.mcVanServ.enable = false;
+  server.storage.copyparty.enable = false;
+  server.cloudflare-proxy.enable = true;
+  server.cloudflare-np.enable = true;
 
   user = {
     regularstuff.enable = true;

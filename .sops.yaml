@@ -10,6 +10,8 @@ creation_rules:
     key_groups:
       - age:
           - *komico
+          - *amogus
+          - *lapserver
   - path_regex: /system/users/secrets.yaml$
     key_groups:
       - age:
@@ -17,7 +19,13 @@ creation_rules:
           - *vm1
           - *amogus
           - *lapserver
-  - path_regex: /system/server/storage/secrets.yaml$
+  - path_regex: /system/server/storage/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+          - *komico
+          - *amogus
+          - *lapserver
+  - path_regex: /system/server/[^/]+\.(yaml|json|env|ini)$
     key_groups:
       - age:
           - *komico

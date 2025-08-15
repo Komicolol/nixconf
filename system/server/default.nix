@@ -26,5 +26,6 @@
     ./for-the-funsies
     ./website
     ./storage
+    ./cloudflare
   ];
 }
