@@ -6,20 +6,12 @@ in
 {
 
 
+
   options.server.storage.copyparty.enable = lib.mkEnableOption "it's popular :3";
   config = lib.mkIf cfg.enable {
     nixpkgs.overlays = [ inputs.copyparty.overlays.default ];
     environment.systemPackages = [ pkgs.copyparty ];
 
-    # passwords!
-    sops.secrets.komicopassword = {
-      sopsFile = ./secrets.yaml;
-      owner = "copyparty";
-    };
-    sops.secrets.pubpassword = {
-      sopsFile = ./secrets.yaml;
-      owner = "copyparty";
-    };
 
     services.copyparty = {
       enable = true;
@@ -28,10 +20,9 @@ in
 
       settings = {
         i = "0.0.0.0";
-        p = [ 3030 3033 ];
+        p = [ 3033 ];
 
         # global flags
-        scan = 60;
         e2dsa = true; # file indexing, scans writable folders for new files and scans all mounted volumes
         e2ts = true; # metadata indexing, scans for tangs in all files w/o tags yte
         z = true; # zero conf
@@ -39,8 +30,8 @@ in
       };
 
       accounts = {
-        komico.passwordFile = config.sops.secrets.komicopassword.path;
-        pub.passwordFile = config.sops.secrets.pubpassword.path;
+        komico.passwordFile = config.sops.secrets."copyparty/komicopassword".path;
+        pub.passwordFile = config.sops.secrets."copyparty/pubpassword".path;
       };
 
       volumes = {
@@ -79,6 +70,18 @@ in
 
         };
       };
+    };
+    networking.firewall.allowedTCPPorts = [ 3033 ];
+    # passwords!
+    sops.secrets."copyparty/komicopassword" = {
+      sopsFile = ./secrets.yaml;
+      owner = "copyparty";
+      group = "copyparty";
+    };
+    sops.secrets."copyparty/pubpassword" = {
+      sopsFile = ./secrets.yaml;
+      owner = "copyparty";
+      group = "copyparty";
     };
   };
 }

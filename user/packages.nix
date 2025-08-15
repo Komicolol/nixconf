@@ -52,6 +52,7 @@
       jq # used for script: https://github.com/YaLTeR/niri/discussions/724#discussioncomment-13228472
       drawio # diagrams galore!!1
       davfs2 # webdav, for testing out copyparty lmao
+      rclone # thing...
 
       # oh wow i wonder what this is all about....
       qbittorrent
