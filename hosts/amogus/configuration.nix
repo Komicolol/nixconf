@@ -25,8 +25,8 @@
   ## -- Server Testing... -- ##
   # AAAAAAAAAAA
   server.storage.copyparty.enable = false;
-  server.cloudflare-proxy.enable = true;
-  server.cloudflare-np.enable = true;
+  server.cloudflare-proxy.enable = false;
+  server.cloudflare-np.enable = false;
 
   user = {
     regularstuff.enable = true;

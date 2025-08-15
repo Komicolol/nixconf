@@ -19,6 +19,7 @@ in
         "git.komico.dev"
         "jf.komico.dev"
         "ima.komico.dev"
+        "cp.komico.dev"
       ];
     };
   };
