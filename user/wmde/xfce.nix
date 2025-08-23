@@ -5,8 +5,9 @@
   ...
 }: {
   options = {
-    user.wmde.xfceDE.enable =
-      lib.mkEnableOption "enables xfce4 and thunar";
+    user.wmde.xfceDE = {
+      enable = lib.mkEnableOption "enables xfce4 and thunar";
+    };
   };
 
   config = lib.mkIf config.user.wmde.xfceDE.enable {
@@ -21,12 +22,9 @@
       package = lib.mkForce pkgs.gnome.gvfs;
     };
 
-    # xfce + i3 bc why not
     environment.systemPackages = with pkgs; [
       picom-next
-      i3blocks
     ];
-
     services.xserver = {
       enable = true;
       enableTearFree = true; # bruh.
@@ -34,11 +32,10 @@
         xterm.enable = false;
         xfce = {
           enable = true;
-          noDesktop = true;
-          enableXfwm = false;
+          noDesktop = lib.mkDefault false;
+          enableXfwm = lib.mkDefault true;
         };
       };
-      windowManager.i3.enable = true;
     };
     services.xserver.xkb = {
       layout = "au";

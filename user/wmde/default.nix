@@ -9,6 +9,7 @@
     ./xfce.nix
     ./sddm.nix
     ./niri.nix
+    ./i3.nix
   ];
   user.wmde.sddmDM.enable =
     lib.mkDefault true;
@@ -16,4 +17,6 @@
     enable = true;
     platformTheme = "qt5ct";
   };
+
+  programs.dconf.enable = true; # ???
 }
