@@ -28,17 +28,20 @@
   server.cloudflare-proxy.enable = false;
   server.cloudflare-np.enable = false;
 
+  ## ???
   user = {
     regularstuff.enable = true;
     terminal.enable = true;
     services.weylusThing.enable = true;
     services.mpd.enable = true;
+    services.backup.enable = true;
 
     wmde.sddmDM.enable = true;
     # gaming/light productivity
     wmde.hyprwm.enable = true;
     # school work/heavy productivity
     wmde.xfceDE.enable = true;
+    wmde.i3.enable = false;
     # in the middle, might replace xfce+i3
     # nevermind, i'm just dum. (i put in ~DISPLAY: ":1"~ instead of ~DISPLAY ":1"~...)
     wmde.niri.enable = true;
@@ -56,6 +59,7 @@
     mediaprod.vidEditing.enable = false;
   };
 
+  ## --- Amogus-Specific Configs! ---
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -63,7 +67,6 @@
 
   networking.hostName = "amogus"; # Define your hostname.
 
-  ## --- Amogus-Specific Configs! ---
   services.printing.enable = true;
   services.xserver.videoDrivers = ["amdgpu"];
 

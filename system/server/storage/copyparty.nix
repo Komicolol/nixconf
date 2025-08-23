@@ -36,7 +36,7 @@ in
 
       volumes = {
         "/" = {
-          path = "/srv/copyparty/data";
+          path = "/srv/copyparty/data"; # ??? why ??? am i fucking stupid or smth??
           access = {
             rwmda = "komico";
           };

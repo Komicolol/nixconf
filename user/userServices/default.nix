@@ -8,5 +8,6 @@
     ./weylusthing.nix
     ./mpd.nix
     # ./kanata.nix
+    ./backup.nix
   ];
 }
