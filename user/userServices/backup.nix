@@ -9,7 +9,7 @@ in
     systemd.user.timers."backups-to-copyparty" = {
       wantedBy = [ "timers.target" ];
       timerConfig = {
-        OnCalendar = "daily";
+        OnCalendar = "hourly";
         Persistent = true;
         Unit = "backups-to-copyparty.service";
       };
@@ -21,6 +21,7 @@ in
       script = ''
          bash $HOME/.config/bin/backup.sh # something someting it's a secret lmao
       '';
+      serviceConfig.type = "oneshot"; # dumbass LMAOOOo
     };
   };
 }

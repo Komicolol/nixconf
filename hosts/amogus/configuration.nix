@@ -20,7 +20,7 @@
 
   ## --- Change this to system essentials --- ##
   server.essentials.sshdstuff.enable = true;
-  server.for-the-funsies.mullvad.enable = true;
+  server.for-the-funsies.mullvad.enable = true; # INCLUSION WHEN???
 
   ## -- Server Testing... -- ##
   # AAAAAAAAAAA

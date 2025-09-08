@@ -1,6 +1,10 @@
 #+title: Server Options
 
 Toggleable because i said so :3
+
+Also I need this to be in a different place, it's getting a bit too cramped in
+here... I'll probably put it on /nixconf/server instead of the system thing...
+
 - wow it's now all server that's crazy!!
 **** The Essentials
 - sshd - ~server.sshdstuff.enable = true~

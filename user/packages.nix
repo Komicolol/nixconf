@@ -53,6 +53,7 @@
       drawio # diagrams galore!!1
       davfs2 # webdav, for testing out copyparty lmao
       rclone # thing...
+      koreader # reading /legally/ downloaded epubs :3
 
       # oh wow i wonder what this is all about....
       qbittorrent
@@ -61,7 +62,6 @@
       dracula-icon-theme
       catppuccin-gtk
       flat-remix-gtk
-      inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
 
       # brower things
       brave # why firefox why

@@ -10,7 +10,6 @@
       hydrogen # drum
       ardour
       lmms
-      reaper
     ];
   };
 }
