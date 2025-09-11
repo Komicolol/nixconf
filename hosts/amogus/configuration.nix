@@ -35,6 +35,7 @@
     services.weylusThing.enable = true;
     services.mpd.enable = true;
     services.backup.enable = true;
+    services.printing.enable = true;
 
     wmde.sddmDM.enable = true;
     # gaming/light productivity
@@ -67,7 +68,6 @@
 
   networking.hostName = "amogus"; # Define your hostname.
 
-  services.printing.enable = true;
   services.xserver.videoDrivers = ["amdgpu"];
 
   # From nix wiki, i hope it works :(

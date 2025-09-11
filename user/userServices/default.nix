@@ -9,5 +9,6 @@
     ./mpd.nix
     # ./kanata.nix
     ./backup.nix
+    ./printing.nix
   ];
 }
