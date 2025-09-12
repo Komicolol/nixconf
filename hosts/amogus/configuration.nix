@@ -49,11 +49,10 @@
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;
-    devstuff.kanata.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = true;
-    gaming.misc.enable = true;
+    gaming.steam.enable = false;
+    gaming.misc.enable = false;
 
     mediaprod.drawing.enable = false;
     mediaprod.music.enable = false;
