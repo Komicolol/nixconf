@@ -22,12 +22,6 @@
       hyprlock
       pyprland
       hyprpicker
-      # wayland things
-      waybar # bars on bars!!!
-      wl-clipboard # copy and paste
-      rofi-wayland # rofi
-      swww # ?
-      libcava # waybar thing
       hyprlang
     ];
 

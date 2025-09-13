@@ -37,15 +37,16 @@
     services.backup.enable = true;
     services.printing.enable = true;
 
-    wmde.sddmDM.enable = true;
-    # gaming/light productivity
-    wmde.hyprwm.enable = true;
-    # school work/heavy productivity
+    # soemthing
+    wmde.sddmDM.enable = false;
+    wmde.hyprwm.enable = false;
+    wmde.auto-login.enable = false; # a work in progress...
+    # backup :3
     wmde.xfceDE.enable = true;
     wmde.i3.enable = false;
-    # in the middle, might replace xfce+i3
-    # nevermind, i'm just dum. (i put in ~DISPLAY: ":1"~ instead of ~DISPLAY ":1"~...)
+    # the ONLY wm i use, bc scrolling is fun!
     wmde.niri.enable = true;
+    wmde.niri.autoLogin = true;
 
     devstuff.devpkgs.enable = true;
     devstuff.vmthings.enable = true;

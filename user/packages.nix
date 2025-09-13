@@ -55,6 +55,14 @@
       rclone # thing...
       koreader # reading /legally/ downloaded epubs :3
 
+      # wayland things
+      # moving to here bc i barely use hyprland anymore...
+      waybar # bars on bars!!!
+      wl-clipboard # copy and paste
+      rofi-wayland # rofi
+      swww # ?
+      libcava # waybar thing
+
       # oh wow i wonder what this is all about....
       qbittorrent
 
