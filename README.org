@@ -8,8 +8,8 @@ this is bc i know i'll forget what some options are and it might get too complic
 
 ** hosts
 - amogus = my thinkpad t14 1st gen laptop
-- android = my motorola phone and samsung tablet (not working and i don't wanna fix it.)
-- lapserver1 = old ass laptop that i'll use as a server because i'm bored
+- android = doesn't even matter at this point.
+- lapserver = old ass laptop that i'll use as a server because i'm bored
 - vm1 = a vm just to test server configs
 
 ** Options
@@ -21,16 +21,15 @@ me realising that it's better to have it in different files:
 /documentation? just read the source code!/ - me
 
 * If you want to use my config..
-Don't. I'm just joking, go copy a template of mine and insert your hardware config file. Look into the options above just to see what you can use.
-** CHANGE THIS FILE SPECIFICALLY BTWWWW
-- [[./system/users/default.nix][User Configuration]] - *CHANGE PUB SSH KEY AND MAYBE REMOVE PASSWORD FILES IDKKK*
+Don't. I'm just joking, go copy a template of mine. Look into the options above
+just to see what you can use.
 
+** CHANGE THIS FILE SPECIFICALLY
+- [[./system/users/default.nix][User Configuration]] - *CHANGE PUB SSH KEY AND REMOVE PASSWORD FILES*
 ** Templates
 - [[./hosts/templates/desktop/configuration.nix][Desktop Template]]
 - [[./hosts/templates/server/configuration.nix][Server Template]]
 - [[./hosts/templates/laptop/configuration.nix][Laptop Template]]
-
-Just a heads up, this is a personal config of mine and is made just for me. So some things might not work for some people, but whatever. Oh, and you should have some knowledge of Nix before using this.
 
 * Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...
@@ -44,7 +43,7 @@ People that helped with my experience (dotfiles, videos, etc.):
 - [[https://www.youtube.com/c/NoBoilerplate][No Boilerplate]] - The person who got me into this mess in the first place
 - [[https://github.com/sioodmy/dotfiles][sioodmy's dotfiles]] - The NixOS config that I was unfortunately first inspired by (nice config tho)
 - [[https://www.youtube.com/@vimjoyer][Vimjoyer]] - Honestly, I would've probably switched back without people like him
-- [[https://www.youtube.com/@librephoenix][Librepheonix]] - Another NixOS content creator that helped me a lot
+- [[https://www.youtube.com/@librephoenix][Librephoenix]] - Another NixOS content creator that helped me a lot
 - [[https://github.com/Misterio77/nix-config][Misterio77's Nix Config]] - This helped me out a lot lmao, tysm!!!
 - [[https://github.com/nmasur/dotfiles/tree/master][nmasur's Dotfiles]] - What my config could look like if I just locked in smh (really cool config)
 - I'll add more if I remember...
