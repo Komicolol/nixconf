@@ -1,5 +1,5 @@
 #+title: My Nix Config
-#+author: cheeseburger om
+#+author: komico :3
 
 A Nix configuration of all time, and i hope it won't spiral out of control /too/ quickly. hopefully.
 
@@ -18,6 +18,8 @@ me realising that it's better to have it in different files:
 - [[./user/README.org][User Options]]
 - [[./system/server/README.org][System Options]]
 
+/documentation? just read the source code!/ - me
+
 * If you want to use my config..
 Don't. I'm just joking, go copy a template of mine and insert your hardware config file. Look into the options above just to see what you can use.
 ** CHANGE THIS FILE SPECIFICALLY BTWWWW
@@ -26,10 +28,9 @@ Don't. I'm just joking, go copy a template of mine and insert your hardware conf
 ** Templates
 - [[./hosts/templates/desktop/configuration.nix][Desktop Template]]
 - [[./hosts/templates/server/configuration.nix][Server Template]]
+- [[./hosts/templates/laptop/configuration.nix][Laptop Template]]
 
 Just a heads up, this is a personal config of mine and is made just for me. So some things might not work for some people, but whatever. Oh, and you should have some knowledge of Nix before using this.
-
-/oh why even make this section then/ I don't wanna do school work, so I needed to do something to procrastinate ok :sob:
 
 * Why NixOS?
 Because I was watching Nix propaganda (No Boilerplate), and since I was setting a new laptop I thought it'd be a waste to not try it out. Now look at where I'm at...

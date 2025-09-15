@@ -26,6 +26,16 @@
       bottom # :33333333
       tealdeer
       bat
+      duf
+      dutree
+      yt-dlp # mp3 bc opus no work with jellyfin
+      packwiz # minecraft mods!!!
+      dysk # better df
+      gdu
+      fzf # fuzzy finder
+      nix-tree # i wanna look at nix-store
+      ffmpeg # backend for (insert media editor here lmao)
+      playerctl # beeps and boops make me happy
     ];
 
     programs.zsh = {

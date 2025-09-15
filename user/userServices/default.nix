@@ -10,5 +10,6 @@
     # ./kanata.nix
     ./backup.nix
     ./printing.nix
+    ./kanata.nix
   ];
 }

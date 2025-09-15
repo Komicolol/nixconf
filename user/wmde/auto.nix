@@ -2,6 +2,7 @@
 
 # uhh..... im sorry????
 # nahh i'm not using this... for now...
+# https://discourse.nixos.org/t/autologin-hyprland/38159/12
 
 let
   cfg = config.user.wmde.auto-login;

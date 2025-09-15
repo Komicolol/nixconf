@@ -20,5 +20,5 @@
     fira-code-symbols
   ];
   fonts.fontconfig.useEmbeddedBitmaps = true;
-  fonts.enableDefaultFonts = true;
+  fonts.enableDefaultPackages = true;
 }

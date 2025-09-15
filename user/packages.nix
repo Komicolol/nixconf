@@ -18,33 +18,21 @@
       brightnessctl # let there be light!!!
       coreutils # seems a bit important innit
       feh # backgrounds
-      ffmpeg # backend for (insert media editor here lmao)
       gvfs # for server file thing yeah
       keepassxc # passwords, yay!!
-      libnotify # pomodoro thing...
       libreoffice # aaa
       monero-gui # idk I can't even get any monero right now :sob:
       mpd-mpris # stupid aaaaa
       mpv # play thingy idk
-      nix-tree # i wanna look at nix-store
       nwg-look # appearance thing YAYAYAYAYAY
       obsidian # i needed a .md renderer...
-      packwiz # minecraft mods!!!
-      playerctl # beeps and boops make me happy
       pulsemixer # why not :3
       samba # why do I have this?
-      scrcpy # yeah
-      spotify # music pain :(
-      strawberry # yum! (music player)
       unzip # zip but no
       vesktop # better discord :3
       vlc # it seems important
-      yt-dlp # mp3 bc opus no work with jellyfin
       zathura # i <3 pdfs (LIKE THE FILE FORMAT NOT /THOSE/ PDF FILES WAITWIATWAIT)
       zip # very important yes
-      styluslabs-write # I DIDN'T BUY THE TABLET JUST FOR OSU I SWEAR (nvm this is postponed, i got smth else..)
-      pdftowrite # for Write.
-      dysk # better df
       vial # pre build ergo mech kbd :3
       waypaper # why tf have i been rawdogging wallpapers when this exists???
       wlsunset # eye hurts :(((
@@ -66,7 +54,7 @@
       # oh wow i wonder what this is all about....
       qbittorrent
 
-      ## still haven't gotten home.nix configured yet but wtvr.
+      ## still haven't gotten home.nix configured yet but wtvr. (I don't think i ever will...)
       dracula-icon-theme
       catppuccin-gtk
       flat-remix-gtk
@@ -76,8 +64,5 @@
       qutebrowser # ty bread on penguin for introducting me to this <333
       inputs.zen-browser.packages."${system}".default # firefox, might not even use anymore...
     ];
-
-    # :(
-    programs.firefox.enable = false;
   };
 }

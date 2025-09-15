@@ -35,13 +35,13 @@
       sqlite # sql lite
       gcc # gnu c compiler
       busybox # bb (lsusb)
-      fzf # fuzzy finder
       tree-sitter-grammars.tree-sitter-typst # typst, because why not :3
       libtree # tree lib
       pandoc # org to pdf, md, mdx, wtvr
       acpi # something, that's for sure! (using it to look at bat. percentage rn)
       man-pages # learning c right now, and it seems pretty useful no???
       typst # yay!!!
+      wordnet # dictionary !!
     ];
 
     programs.gnupg.agent = {
@@ -49,5 +49,6 @@
       enableSSHSupport = true;
     };
     programs.adb.enable = true;
+    programs.nix-ld.enable = true;
   };
 }

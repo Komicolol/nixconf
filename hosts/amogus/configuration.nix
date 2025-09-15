@@ -36,6 +36,7 @@
     services.mpd.enable = true;
     services.backup.enable = true;
     services.printing.enable = true;
+    services.kanata.enable = true;
 
     # soemthing
     wmde.sddmDM.enable = false;
@@ -52,7 +53,7 @@
     devstuff.vmthings.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = false;
+    gaming.steam.enable = true;
     gaming.misc.enable = false;
 
     mediaprod.drawing.enable = false;

@@ -4,7 +4,7 @@
 
 let
   cfg = config.user.wmde.niri;
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
   session = "${pkgs.niri}/bin/niri-session";
   username = "komico"; # TODO: no hardcoding stuff
 in
