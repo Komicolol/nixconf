@@ -7,5 +7,8 @@
   imports = [
     ./tlpSettings.nix
     ./upower.nix
+    ./pp-daemon.nix
   ];
+
+
 }

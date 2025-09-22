@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options.system.laptop.upower.enable = lib.mkEnableOption "baller";
 
   config = lib.mkIf config.system.laptop.upower.enable {
@@ -9,7 +12,7 @@
       percentageLow = 15;
       percentageCritical = 5;
       percentageAction = 3;
-      criticalPowerAction = "Hibernate";
+      criticalPowerAction = "PowerOff";
     };
   };
 }

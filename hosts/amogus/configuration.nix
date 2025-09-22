@@ -13,8 +13,9 @@
 
   ## --- settings and presets and shit!!! --- ##
   system = {
-    laptop.tlpSettings.enable = true;
+    # laptop.tlpSettings.enable = true;
     laptop.upower.enable = true;
+    laptop.ppDaemon.enable = true;
     kernel.zenKernel.enable = true;
   };
 
@@ -53,7 +54,7 @@
     devstuff.vmthings.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = true;
+    gaming.steam.enable = false;
     gaming.misc.enable = false;
 
     mediaprod.drawing.enable = false;
@@ -74,31 +75,34 @@
   # From nix wiki, i hope it works :(
   # TODO: put this in either system.drivers.amd or something, ts looks ugly
   # as hell :wiltedrose:
-  environment.variables={
-    RUSTICL_ENABLE="radeonsi";
+  environment.variables = {
+    RUSTICL_ENABLE = "radeonsi";
     ROC_ENABLE_PRE_VEGA = "1";
-   };
+  };
 
- hardware.graphics = {
-   enable = true;
-   extraPackages = with pkgs; [
-     mesa
-     libva
-     libvdpau-va-gl
-     vulkan-loader
-     vulkan-validation-layers
-     amdvlk  # Optional: AMD's proprietary Vulkan driver
-     mesa.opencl  # Enables Rusticl (OpenCL) support
-     rocmPackages.clr.icd # aaa im scared :((
-   ];
- };
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      mesa
+      libva
+      libvdpau-va-gl
+      vulkan-loader
+      vulkan-validation-layers
+      amdvlk # Optional: AMD's proprietary Vulkan driver
+      mesa.opencl # Enables Rusticl (OpenCL) support
+      rocmPackages.clr.icd # aaa im scared :((
+    ];
+  };
 
- hardware.amdgpu.initrd.enable = true; # idk what it does but it looks pretty :3
- boot.kernelParams = [
-   "acpi_backlight=native" # something that's for sure
-   "psmouse.synaptics_intertouch=0" # touchpad things???
- ];
- services.fstrim.enable = true; # ssd thing. I should look into it. NAHHH
+  hardware.amdgpu.initrd.enable = true; # idk what it does but it looks pretty :3
+  boot.kernelParams = [
+    "acpi_backlight=native" # something that's for sure
+    "psmouse.synaptics_intertouch=0" # touchpad things???
+  ];
+  services.fstrim.enable = true; # ssd thing. I should look into it. NAHHH
+  # free thigy
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
 
   system.stateVersion = "24.11"; # Did you read the comment? no.
 }

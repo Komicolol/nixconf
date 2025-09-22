@@ -13,6 +13,7 @@
       enable = true;
       settings = {
         # https://discourse.nixos.org/t/nixos-power-management-help-usb-doesnt-work/9933/7 - Stole from this person, sorry :(
+        # not compatable with pp daemon
         PLATFORM_PROFILE_ON_AC = "performance";
         PLATFORM_PROFILE_ON_BAT = "balanced";
 
