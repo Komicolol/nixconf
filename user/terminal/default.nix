@@ -25,7 +25,6 @@
       cmatrix
       bottom # :33333333
       tealdeer
-      bat
       duf
       dutree
       yt-dlp # mp3 bc opus no work with jellyfin
@@ -36,6 +35,7 @@
       nix-tree # i wanna look at nix-store
       ffmpeg # backend for (insert media editor here lmao)
       playerctl # beeps and boops make me happy
+      pipes # i'm bored okkkk
     ];
 
     programs.zsh = {
@@ -44,6 +44,13 @@
       # just adding autosuggestions..
       autosuggestions.enable = true;
       autosuggestions.async = true;
+    };
+    programs.bat = {
+      enable = true;
+      extraPackages = with pkgs.bat-extras; [
+        batman
+        batdiff
+      ];
     };
   };
 }

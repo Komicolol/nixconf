@@ -4,7 +4,7 @@
   lib,
   ...
 }: {
-  # Allow unfree packages
+  # Allow unfree packages.. again...
   nixpkgs.config.allowUnfree = true;
 
   imports = [
@@ -18,15 +18,13 @@
     ./mediaprod
   ];
 
-services.udev = {
-
-  packages = with pkgs; [
-    qmk
-    qmk-udev-rules # the only relevant
-    qmk_hid
-    via
-    vial
-  ]; # packages
-
-}; # udev
+  services.udev = {
+    packages = with pkgs; [
+      qmk
+      qmk-udev-rules # the only relevant
+      qmk_hid
+      via
+      vial
+    ]; # packages
+  }; # udev
 }

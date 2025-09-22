@@ -25,7 +25,6 @@
       mpd-mpris # stupid aaaaa
       mpv # play thingy idk
       nwg-look # appearance thing YAYAYAYAYAY
-      obsidian # i needed a .md renderer...
       pulsemixer # why not :3
       samba # why do I have this?
       unzip # zip but no
@@ -47,7 +46,7 @@
       # moving to here bc i barely use hyprland anymore...
       waybar # bars on bars!!!
       wl-clipboard # copy and paste
-      rofi-wayland # rofi
+      rofi # rofi
       swww # ?
       libcava # waybar thing
 
