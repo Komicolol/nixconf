@@ -32,28 +32,35 @@
     nix-minecraft,
     sops-nix,
     ...
-  }: {
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
+  }: let
+    # stealing this one from Misterio77's starter's config
+    inherit (self) outputs;
+    system = [
+      "x86_64-linux"
+      "aarch64-linux"
+    ];
+    forAllSystems = nixpkgs.lib.genAttrs system;
+  in {
+    formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
+    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
+    devShells = forAllSystems (system: {default = import ./shell.nix nixpkgs.legacyPackages.${system};});
 
     # wow configs that's crazy
     nixosConfigurations = {
       amogus = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
+        specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/amogus/configuration.nix
         ];
       };
       vm1 = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
+        specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/vm/vm1/configuration.nix
         ];
       };
       lapserver = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
         modules = [
           ./hosts/homelab/lapserver/configuration.nix
         ];

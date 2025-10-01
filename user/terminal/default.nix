@@ -36,6 +36,7 @@
       ffmpeg # backend for (insert media editor here lmao)
       playerctl # beeps and boops make me happy
       pipes # i'm bored okkkk
+      neovim # for my old nvim conf
     ];
 
     programs.zsh = {
