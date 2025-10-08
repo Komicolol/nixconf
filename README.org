@@ -7,7 +7,7 @@ A Nix configuration of all time, and i hope it won't spiral out of control /too/
 this is bc i know i'll forget what some options are and it might get too complicated for me
 
 ** hosts
-- amogus = my thinkpad t14 1st gen laptop
+- [[./hosts/amogus/configuration.nix][amogus]] = my thinkpad t14 1st gen laptop
 - android = doesn't even matter at this point.
 - lapserver = old ass laptop that i'll use as a server because i'm bored
 - vm1 = a vm just to test server configs

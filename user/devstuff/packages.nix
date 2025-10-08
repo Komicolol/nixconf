@@ -46,6 +46,7 @@
         wordnet # dictionary !!
         sox # ... sounds...
         nixd # nix run nixpkgs#nix run nixpkgs#nix run nixpkgs#...
+        cloc # lines of code
       ]
       ++ [
         outputs.packages.${system}.myvi # personal neovim conf, needs output thingy

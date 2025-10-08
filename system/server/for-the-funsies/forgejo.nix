@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   options.server.for-the-funsies.forgejo.enable = lib.mkEnableOption "baller";
   config = lib.mkIf config.server.for-the-funsies.forgejo.enable {
     services.forgejo = {
@@ -27,13 +30,21 @@
           ACCESS_CONTROL_ALLOW_ORIGIN = "git.komico.dev";
         };
         server = {
+          PROTOCOL = "http+unix";
+          # DISABLE_SSH = true; # AHAHAHAHAHAH
           SSH_PORT = 5124;
           HTTP_PORT = 3001;
-          HTTP_ADDR = "0.0.0.0"; # i don't care anymore.
+          HTTP_ADDR = "/run/forgejo/forgejo.sock";
           ROOT_URL = "https://git.komico.dev/";
-        # DOMAIN = "komico.dev"; # I got my own domain :3
+          DOMAIN = "komico.dev"; # I got my own domain :3
         };
       };
     };
+    services.caddy.virtualHosts."git.komico.dev".extraConfig = ''
+      reverse_proxy unix//run/forgejo/forgejo.sock {
+          header_down X-Real-IP {http.request.remote}
+          header_down X-Forwarded-For {http.request.remote}
+      }
+    '';
   };
 }

@@ -17,8 +17,6 @@
 
     essentials = {
       sshdstuff.enable = true;
-      # about to be removed.
-      ineedstorage.enable = true;
       dockerContainer.enable = true;
       syspkgs.enable = true;
       firewall.enable = true;
@@ -40,7 +38,11 @@
       forgejo.enable = true;
     };
     webstuff.webpkgs.enable = true;
+    webstuff.caddy.enable = true;
   };
+  ## --- lapserver-specific configs ---
+
+  services.tailscale.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -1,5 +1,10 @@
+-- i can't be bothered splitting this up.
+-- i don't care if it looks like i'm copying sioodmy, because there's
+-- a 99% chance i did.
+
 vim.loader.enable()
 -- options
+vim.o.termguicolors = true
 vim.o.laststatus=3
 vim.o.smartindent = true
 vim.o.expandtab = true
@@ -11,6 +16,7 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.relativenumber = true
 vim.o.number = true
+vim.o.cmdheight = 0
 vim.o.clipboard = "unnamedplus"
 vim.g.mapleader = " "
 vim.diagnostic.config({
@@ -18,14 +24,46 @@ vim.diagnostic.config({
     virtual_lines = false,
     signs = false,
 })
--- onedark
+-- !!! themes !!!
+-- *** onedark ***
 require("onedarkpro").setup ({
   options = {
-    transparency = true
+    transparency = false
   }
 })
 vim.cmd("colorscheme onedark")
+-- *** kanagawa ***
+-- require("kanagawa").setup({
+--     transparent = true
+-- })
+-- vim.cmd("colorscheme kanagawa")
+-- *** everforest ***
+-- vim.cmd("colorscheme everforest")
 
+-- bars!
+require('barbar').setup()
+
+-- dashboard
+local alpha = require('alpha')
+local dashboard = require('alpha.themes.dashboard')
+dashboard.section.header.val = {
+[[  __          __          __          __          __          __          ]],
+[[_/  |_  _____/  |_  _____/  |_  _____/  |_  _____/  |_  _____/  |_  ____  ]],
+[[\   __\/ __ \   __\/  _ \   __\/ __ \   __\/  _ \   __\/ __ \   __\/  _ \ ]],
+[[ |  | \  ___/|  | (  <_> )  | \  ___/|  | (  <_> )  | \  ___/|  | (  <_> )]],
+[[ |__|  \___  >__|  \____/|__|  \___  >__|  \____/|__|  \___  >__|  \____/ ]],
+[[           \/                      \/                      \/             ]],
+}
+dashboard.section.buttons.val = {
+  dashboard.button("e", "NEW FILE", ":ene<BAR> startinsert<CR>"),
+  dashboard.button("f", "find files??", ":FzfLua files<CR>"),
+  dashboard.button("a", "agenda www", ":Org agenda<CR>"),
+  dashboard.button("q", "leaving :(", ":qa<CR>"),
+}
+dashboard.section.footer.val = "▼・ᴗ・▼"
+dashboard.config.opts.noautocmd = true
+vim.cmd[[autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2]]
+alpha.setup(dashboard.config)
 -- orgmode 
 require("orgmode").setup({
   org_agenda_files = '~/Notes/roam/agenda.org',
@@ -48,11 +86,6 @@ cmp.setup({
       documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-      -- ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-      -- ['<C-f>'] = cmp.mapping.scroll_docs(4),
-      -- ['<C-Space>'] = cmp.mapping.complete(),
-      -- ['<C-e>'] = cmp.mapping.abort(),
-      -- ['<CR>'] = cmp.mapping.confirm({ select = true }),
          ['<CR>'] = cmp.mapping(function(fallback)
         if cmp.visible() then
             if luasnip.expandable() then
@@ -115,33 +148,30 @@ cmp.setup.cmdline(':', {
     matching = { disallow_symbol_nonprefix_matching = false }
 })
 
-require('nvim-autopairs').setup()
 -- If you want insert `(` after select function or method item
+require('nvim-autopairs').setup()
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 cmp.event:on(
   'confirm_done',
   cmp_autopairs.on_confirm_done()
 )
 
--- bars!
-require('barbar').setup()
-
 -- keybinds
 vim.keymap.set('n', '<leader>.', ':Ex<CR>')
-vim.keymap.set('n', '<leader>u', ':update<CR> :source ./nvim/init.lua<CR>') -- testing purposes, delete later
 
 vim.keymap.set('n', '<leader><tab>', '<cmd>BufferNext<CR>')
 vim.keymap.set('n', '<leader><s-tab>', '<cmd>BufferPrevious<CR>')
 vim.keymap.set('n', '<leader>x', '<cmd>BufferClose<CR>')
 
-vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>')
+vim.keymap.set('n', '<leader>fb', ':setl fo=aw2tq<CR>', {desc = "paragraph formatting"})
+vim.keymap.set('n', '<leader>F', ':FzfLua files<CR>')
 vim.keymap.set('n', '<leader>fgs', ':FzfLua git_status<CR>')
 vim.keymap.set('n', '<leader>fgd', ':FzfLua git_diff<CR>')
 
 
 -- lsp configs
 local nlsp = vim.lsp
--- nlsp.enable('nixd')
+nlsp.enable('nixd')
 nlsp.enable('clangd')
 nlsp.enable('pyright')
 

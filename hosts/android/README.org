@@ -1,3 +1,6 @@
 #+title: Android
 
 yup. i'll do this later. i think.
+
+ok so like I TRIED to do this, but like 7 generations later and it was using up
+25 GiB of storage... so this will do.

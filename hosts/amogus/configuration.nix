@@ -13,7 +13,7 @@
 
   ## --- settings and presets and shit!!! --- ##
   system = {
-    # laptop.tlpSettings.enable = true;
+    # laptop.tlpSettings.enable = true; # not good with ppDaemon, LMAO
     laptop.upower.enable = true;
     laptop.ppDaemon.enable = true;
     kernel.zenKernel.enable = true;
@@ -26,8 +26,8 @@
   ## -- Server Testing... -- ##
   # AAAAAAAAAAA
   server.storage.copyparty.enable = false;
-  server.cloudflare-proxy.enable = false;
-  server.cloudflare-np.enable = false;
+  server.for-the-funsies.forgejo.enable = false;
+  server.webstuff.caddy.enable = false;
 
   ## ???
   user = {
@@ -54,8 +54,8 @@
     devstuff.vmthings.enable = true;
 
     ## --- fun stuff, disabled when i need to lock in :( --- ##
-    gaming.steam.enable = false;
-    gaming.misc.enable = false;
+    gaming.steam.enable = true;
+    gaming.misc.enable = true;
 
     mediaprod.drawing.enable = false;
     mediaprod.music.enable = false;
@@ -65,12 +65,15 @@
   ## --- Amogus-Specific Configs! ---
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 3;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.luks.devices."luks-ca6cc950-61d2-43a5-b97a-025074e83e79".device = "/dev/disk/by-uuid/ca6cc950-61d2-43a5-b97a-025074e83e79";
 
   networking.hostName = "amogus"; # Define your hostname.
 
   services.xserver.videoDrivers = ["amdgpu"];
+
+  services.tailscale.enable = true;
 
   # From nix wiki, i hope it works :(
   # TODO: put this in either system.drivers.amd or something, ts looks ugly

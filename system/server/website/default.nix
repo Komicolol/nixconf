@@ -6,5 +6,6 @@
 }: {
   imports = [
     ./webpkgs.nix
+    ./proxy.nix
   ];
 }

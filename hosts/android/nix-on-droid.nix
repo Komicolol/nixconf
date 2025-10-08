@@ -6,12 +6,13 @@
 }: {
   # Yeah :3
   imports = [
-    ./devstuff
+      ../../user/devstuff
   ];
 
   # User options
-  terminal.enable = true;
-  devstuff.enable = true;
+  user.devstuff.devpkgs.enable = true;
+  # terminal.enable = true;
+  # devstuff.enable = true;
 
   # Something something, state vers.
   system.stateVersion = "24.05";
